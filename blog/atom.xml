@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://facebook.github.io/shift-university/blog</id>
+    <title>Shift University Blog</title>
+    <updated>2018-02-19T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://facebook.github.io/shift-university/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Shift University news and events.</subtitle>
+    <logo>https://facebook.github.io/shift-university/img/shift-logo.svg</logo>
+    <rights>Copyright © 2018 Shift</rights>
+    <entry>
+        <title type="html"><![CDATA[Launch of Docusaurus]]></title>
+        <id>https://facebook.github.io/shift-university/blog/2018/02/19/welcome.html</id>
+        <link href="https://facebook.github.io/shift-university/blog/2018/02/19/welcome.html">
+        </link>
+        <updated>2018-02-19T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Docs are officially launched! Bear with us as we populate these pages with information. These are setup as a public repo so if something is missing, and you feel comfortable, feel free to submit a Pull Request.</p>
+]]></summary>
+        <author>
+            <name>Julian Herrera</name>
+            <uri>https://vidjuheffex.github.io</uri>
+        </author>
+    </entry>
+</feed>
