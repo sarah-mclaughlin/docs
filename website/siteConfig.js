@@ -22,7 +22,7 @@ const siteConfig = {
   baseUrl: '/shift-docs/' /* base url for your project */,
   projectName: 'shift-docs',
   headerLinks: [
-    {doc: 'getting-started', label: 'Docs'},
+    {doc: 'creating-an-account', label: 'Docs'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],

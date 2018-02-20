@@ -4,11 +4,15 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "Guide to Shift",
-    "getting-started": "Getting Started",
-    "Getting Started": "Getting Started",
+    "canvas": "The Canvas",
+    "components-tree": "The Component Tree",
+    "creating-an-account": "Creating an Account",
+    "Creating an Account": "Creating an Account",
     "Docs": "Docs",
     "Help": "Help",
-    "Blog": "Blog"
+    "Blog": "Blog",
+    "Getting Started": "Getting Started",
+    "Builder": "Builder"
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",
