@@ -9,7 +9,7 @@
 const users = [
   {
     caption: 'Shift Studio',
-    image: '/shift-docs/img/shift-logo.svg',
+    image: '/docs/img/shift-logo.svg',
     infoLink: 'https://shift.studio',
     pinned: true,
   },
@@ -19,8 +19,8 @@ const siteConfig = {
   title: 'Shift University' /* title for your website */,
   tagline: 'Guide to Shift',
   url: 'https://shift-studio.github.io' /* your website url */,
-  baseUrl: '/shift-docs/' /* base url for your project */,
-  projectName: 'shift-docs',
+  baseUrl: '/docs/' /* base url for your project */,
+  projectName: 'docs',
   headerLinks: [
     {doc: 'creating-an-account', label: 'Docs'},
     {page: 'help', label: 'Help'},
@@ -53,14 +53,14 @@ const siteConfig = {
     new Date().getFullYear() +
     ' Shift',
   organizationName: 'shift-studio', // or set an env variable ORGANIZATION_NAME
-  projectName: 'shift-docs', // or set an env variable PROJECT_NAME
+  projectName: 'docs', // or set an env variable PROJECT_NAME
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
     theme: 'default',
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
-  repoUrl: 'https://github.com/shift-studio/shift-docs',
+  repoUrl: 'https://github.com/shift-studio/docs',
 };
 
 module.exports = siteConfig;
