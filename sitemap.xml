@@ -4,5 +4,7 @@
 <url> <loc>https://shift-studio.github.io/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/en/index.html" /> </url>
 <url> <loc>https://shift-studio.github.io/users.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/en/users.html" /> </url>
 <url> <loc>https://shift-studio.github.io/blog/2018/02/19/welcome.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
-<url> <loc>https://shift-studio.github.io/docs/getting-started.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/docs/getting-started.html" /> </url>
+<url> <loc>https://shift-studio.github.io/docs/canvas.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/docs/canvas.html" /> </url>
+<url> <loc>https://shift-studio.github.io/docs/components-tree.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/docs/components-tree.html" /> </url>
+<url> <loc>https://shift-studio.github.io/docs/creating-an-account.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://shift-studio.github.io/docs/creating-an-account.html" /> </url>
 </urlset>
