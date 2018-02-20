@@ -1,5 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["getting-started"]
+    "Getting Started": ["creating-an-account"],
+    "Builder": ["canvas","components-tree"]
   }
 }
