@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background: white;
 }
 
 h1, h2, h3, h4 {
@@ -16,8 +17,15 @@ h1, h2, h3, h4 {
     color: #1B1C1D;
 }
 
-.navigationSlider .slidingNav ul li a {
-    color: #717884;
+.mainContainer {
+    background: transparent;
+}
+
+.mainContainer .wrapper .post h1,
+.mainContainer .wrapper .post h2,
+.mainContainer .wrapper .post h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .docsNavContainer {
@@ -28,20 +36,30 @@ h1, h2, h3, h4 {
     margin-top: 60px;
 }
 
+.navigationSlider .slidingNav ul li a {
+    color: #717884;
+}
+
+nav.toc .toggleNav {
+    background:white;
+}
+
 nav.toc .toggleNav ul li a {
-    color: #798495;
+    color: #1B1C1D;
 }
 
 nav.toc .toggleNav ul li a.navItemActive {
-    color: #545b66;
+    color: #2693FF;
 }
 
 nav.toc .toggleNav .navGroup.navGroupActive {
-    background: #F1F3F6;
+    background: transparent;
 }
 
 nav.toc .toggleNav .navGroup.navGroupActive h3 {
-    background: #2693FF;
+    background: transparent;
+    color:#1B1C1D;
+    font-weight: 900;
 }
 
 footer.nav-footer {
@@ -56,6 +74,12 @@ footer.nav-footer {
     padding: 0 24px;
     font-weight: 300;
     line-height: 40px;
+    text-transform: none;
+    transition: none;
+}
+
+.button:hover {
+    background: #2693FF;
 }
 
     
