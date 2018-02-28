@@ -22,7 +22,7 @@ const siteConfig = {
   baseUrl: '/docs/' /* base url for your project */,
   projectName: 'docs',
   headerLinks: [
-    {doc: 'creating-an-account', label: 'Docs'},
+    {doc: 'overview', label: 'Docs'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],

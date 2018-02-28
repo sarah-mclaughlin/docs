@@ -1,6 +1,7 @@
 {
   "docs": {
-    "Getting Started": ["creating-an-account"],
-    "Builder": ["canvas","components-tree"]
+    "Quickstart": ["overview","beginner-tutorial"],
+    "Builder": ["introduction","design-mode","code-mode"],
+    "Guides": ["shift-component","subscriptions", "export", "graphiql"]
   }
 }
