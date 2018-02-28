@@ -1,5 +1,65 @@
 /* your custom css */
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+    font-family: 'Lato';
+    src: url(https://fonts.googleapis.com/css?family=Lato);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: #1B1C1D;
+}
+
+.navigationSlider .slidingNav ul li a {
+    color: #717884;
+}
+
+.docsNavContainer {
+    margin: 120px 40px 0 0;
+}
+
+.mainContainer .wrapper .post h1 {
+    margin-top: 60px;
+}
+
+nav.toc .toggleNav ul li a {
+    color: #798495;
+}
+
+nav.toc .toggleNav ul li a.navItemActive {
+    color: #545b66;
+}
+
+nav.toc .toggleNav .navGroup.navGroupActive {
+    background: #F1F3F6;
+}
+
+nav.toc .toggleNav .navGroup.navGroupActive h3 {
+    background: #2693FF;
+}
+
+footer.nav-footer {
+    box-shadow: none;
+}
+
+.button {
+    border: none;
+    background: #2693FF;
+    color: white;
+    font-size: 15px;
+    padding: 0 24px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+    
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
