@@ -4,6 +4,7 @@
     "Builder": ["introduction","design-mode","code-mode","import","export"],
     "Design": ["component-tree","style-editor","canvas"],
     "Code": ["dependency-manager","graphiql","queries","mutations","subscriptions"],
-    "Guides": ["shift-component"]
+    "Guides": ["shift-component"],
+    "Shift Components": ["router", "route", "state", "data-connector", "replicate-list"]
   }
 }
