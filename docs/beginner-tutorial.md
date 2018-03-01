@@ -8,6 +8,7 @@ This is a beginner's tutorial that will cover different parts of a web-app devel
 For starters let's create a simple message board app that will store and persist messages submitted by the user.
 And then with subscriptions we will also see how the message board will update everytime a message is added.
 
+Table of Contents:
 * [Create a new Project](#create-a-new-project)
 * [Structure](#structure)
 * [Content](#content)
@@ -26,7 +27,7 @@ In the Dashboard you can simply create a new project by giving it a name.
 
 ## Structure
 
-## Content Mock
+## Content
 
 ## Style
 

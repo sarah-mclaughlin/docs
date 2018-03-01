@@ -4,13 +4,14 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
+Table of Contents:
 * [Dashboard](#dashboard)
 * [Design Mode](#desing-mode)
 * [Code Mode](#code-mode)
 * [Routing](#routing)
 * [Preview](#preview)
 * [Profile](#profile)
-* [Export Manager](#export-manager)
+* [Export](#export-manager)
 * [Timeline](#timeline)
 * [Toolbar](#toolbar)
 * [Simultaneous Users](#simultaneous-users)
@@ -18,7 +19,7 @@ sidebar_label: Introduction
 
 ## Dashboard
 
-The Dashboard is your project manager. The projects you create and collaborate with, will be sorted here by last changes. To create a new empty project all you need is to name it.
+The __Dashboard__ is your project manager. The projects you create and collaborate with, will be sorted here by last changes. To create a new empty project all you need is to name it.
 
 ## Toolbar
 
@@ -26,27 +27,32 @@ The Shift's toolbar is similar to an IDE's. Here you can find not only navigatio
 
 ## Design Mode
 
-The Canvas of your web-app. With the help of Shift's Component-Tree and a set of Component-based tools you will have everything you need to structure, style, connect and preview your components and content.
-
+The __Canvas__ of your web-app. With the help of Shift's Component-Tree and a set of Component-based tools you will have everything you need to structure, style, connect and preview your components and content.
+<br><br><br>
+[__More on Design Mode__](design-mode.md)
 ## Code Mode
 
 Where the code happens, isn't just written. In Code Mode you have all the magic that happens in the backbone of your app, a graphQL connection and it's queries, mutations and subscriptions, aswell as actions as part of the good old Redux store, the chance to develop custom components and where your Stylesheet is joined.
+<br><br><br>
+[__More on Code Mode__](code-mode.md)
 
 ## Routing
 
-Since Shift enables React's Routing, there's always need to check your path.
+Since __Shift__ enables __React's Routing__, there's always need to check your path.
 
 ## Preview
 
-Preview your app on the run wihout having to deploy it or simulate how it would be represented in a specific mobile device. It's like you just got your browser and IDE joined, in your browser, it's tricky at times.
+__Preview__ your app on the run wihout having to deploy it or simulate how it would be represented in a specific mobile device. It's like you just got your browser and IDE joined, in your browser, it's tricky at times.
 
 ## Profile
 
 This is you, a pathway to your dashboard, profile settings and logout in case of a day's end.
 
-## Export Manager
+## Export
 
 Export your app in seconds, download the bundle and you are ready to deploy. It's not as easy as it is simple.
+<br><br><br>
+[__More on Export__](export.md)
 
 ## Timeline
 
