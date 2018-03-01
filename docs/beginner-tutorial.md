@@ -8,8 +8,8 @@ This is a beginner's tutorial that will cover different parts of a web-app devel
 For starters let's create a simple message board app that will store and persist messages submitted by the user.
 And then with subscriptions we will also see how the message board will update everytime a message is added.
 
-Table of Contents:
-* [The Plan](#the-plant)
+__Table of Contents:__
+* [The Plan](#the-plan)
 * [Create a new Project](#create-a-new-project)
 * [Structure](#structure)
 * [Content](#content)
@@ -22,27 +22,31 @@ Table of Contents:
 
 ## The Plan
 
-In the first place let's look at how will we design our application.
-
-What we want to see?
+To start our project we need a plan.
+<br><br>
+__What we want to see?__
  - __Messages Dashboard__ - The default path for our application. This is where all the submitted messages will be shown.
  - __Message__ - A Message view where we will have an individual message shown.
  - __Message Form__ - A simple form for Message submission.
+<br><br>
 
- What is a Message?
-  A Message will have the following:
+__What is a Message in the App context?__
+
+A __Message__ will have the following properties:
  - `id` (unique)
  - `title`
  - `description`
  - `date`
+<br><br>
 
-What we want to happen?
+__What we want to happen?__
 - Messages to be shown at the Message Dashboard.
 - Messages to be submitted in the Message Form.
 - Store the Messages in a db (Graphcool used in this tutorial as the endpoint).
 - If a Message Title is clicked, redirect to the individual Message.
+<br><br>
 
-When we want it?
+__When we want it?__
 - Yesterday.
 
 ## Create a new project
@@ -72,7 +76,7 @@ Now we configure each [__Route__](route.md) component. On the __component config
 
 ![Routing](/docs/docs/assets/firsttutorial_routing2.gif)
 
-Starting with the __Home Route__ we will add a [__DataConnector__](dataconnector.md) to get the data from our Graphql DB endpoint and to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data received, or in this context, each __Message__. 
+Starting with the __Home Route__ we will add a [__DataConnector__](dataconnector.md) to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
 <br><br>
 For each __Message__ we will want to show its __Title__ (which will be a link to the individual message) and __Date__, so we add the following components:
 
