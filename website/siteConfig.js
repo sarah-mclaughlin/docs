@@ -19,7 +19,7 @@ const siteConfig = {
   title: 'Shift University' /* title for your website */,
   tagline: 'Guide to Shift',
   url: 'https://shift-studio.github.io' /* your website url */,
-  baseUrl: '/docs/' /* base url for your project */,
+  baseUrl: '/' /* base url for your project */,
   projectName: 'docs',
   headerLinks: [],
   users,
