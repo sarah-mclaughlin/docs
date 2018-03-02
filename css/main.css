@@ -1931,14 +1931,6 @@ footer.nav-footer {
     background: #2693FF;
 }
 
-.fixedHeaderContainer {
-    display: none;
-}
-
-.navPusher {
-    padding-top: 0;
-}
-
     
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
