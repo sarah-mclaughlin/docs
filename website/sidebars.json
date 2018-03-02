@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Quickstart": ["index","beginner-tutorial"],
+    "Quickstart": ["overview","beginner-tutorial"],
     "Builder": ["introduction","design-mode","code-mode","import","export"],
     "Design": ["component-tree","style-editor","canvas"],
     "Code": ["dependency-manager","graphiql","queries","mutations","subscriptions"],
