@@ -21,11 +21,7 @@ const siteConfig = {
   url: 'https://shift-studio.github.io' /* your website url */,
   baseUrl: '/docs/' /* base url for your project */,
   projectName: 'docs',
-  headerLinks: [
-    {doc: 'overview', label: 'Docs'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
-  ],
+  headerLinks: [],
   users,
   /* path to images for header/footer */
   headerIcon: 'img/shift-logo.svg',
