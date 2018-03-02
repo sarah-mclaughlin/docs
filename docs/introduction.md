@@ -4,7 +4,7 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-__Table of Contents:__
+Table of Contents:
 * [Dashboard](#dashboard)
 * [Design Mode](#desing-mode)
 * [Code Mode](#code-mode)
