@@ -163,9 +163,12 @@ mutation addMessage (
 
 > Each __Query__ and __Mutation__ needs to be added separately 
 
-Another step complete, it's time to see the data.
+Another step complete, it's time to create data.
 
 ## Content
+
+Our app runs on data, receives and submits __Messages__
+In the Shift's GraphQL interface (`Code->Settings->GraphQL`) 
 
 ## Style
 
