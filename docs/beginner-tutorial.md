@@ -7,7 +7,7 @@ This is a beginner's tutorial that will cover different parts of a web-app devel
 
 For starters let's create a simple message board app that will store and persist messages submitted by the user.
 
-__Table of Contents:__
+### Table of Contents:
 * [The Plan](#the-plan)
 * [Create a new Project](#create-a-new-project)
 * [Structure](#structure)
@@ -63,7 +63,7 @@ First we will need to add the [__Router__](router.md) component to handle all th
 
 > You can delete the default children of each created component.
 
-Now we configure each [__Route__](route.md) component. On the __component configuration__ tab we set the `Label`, `Path` and `Default path` settings for each of them:
+Now we configure each [__Route__](route.md) component. On the __component settings__ tab we set the `Label`, `Path` and `Default path` settings for each of them:
 
 | Label       | Path                | Default Path     |
 |-------------|---------------------|------------------|
@@ -189,10 +189,10 @@ Now we have messages in our DB, it's time to see it.
 
 ### Home
 
-Back in __Designer Mode__ we go to the Route we created as __Home__ and select the previously created __DataConnector__ component. On the
+Back in __Designer Mode__, we go to the Route we created as __Home__ and select the previously created __DataConnector__ component. On the
 configuration of the DataConnector we set the `Query` option to __allMessages__ (our `Query` defined in Code Mode).
 
-In child __ReplicateList's__ child set the Configuration option `Item Name` to __message__, this will define how we reference each data item.
+In __ReplicateList's__ child, set the Configuration option `Item Name` to __message__, this will define how we reference each data item.
 Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in Flowprops select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
 
 Now to set each message title and date to each righteous place we select the __Text__ child of __ReplicateList__ and in the Flowprops tab we

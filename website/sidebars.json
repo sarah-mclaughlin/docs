@@ -1,10 +1,10 @@
 {
   "docs": {
-    "Quickstart": ["index","beginner-tutorial"],
-    "Builder": ["introduction","design-mode","code-mode","import","export"],
-    "Design": ["component-tree","style-editor","canvas"],
-    "Code": ["dependency-manager","graphiql","queries","mutations","subscriptions"],
+    "Quickstart": ["index", "beginner-tutorial"],
+    "Editor": ["introduction", "real-time-collab", "timeline", "import", "export"],
+    "Design Mode": ["builder", "canvas", "component-tree", "class-editor", "style-editor", "component-settings", "flowprops", "state-settings", "toolbar"],
+    "Code Mode": ["actions", "custom-component", "dependency-manager", "graphiql", "stylesheet"],
     "Guides": ["shift-component"],
-    "Shift Components": ["router", "route", "state", "data-connector", "replicate-list"]
+    "Shift Components": ["router", "route", "state", "data-connector", "replicate-list", "html-elements"]
   }
 }

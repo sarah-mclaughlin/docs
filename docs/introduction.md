@@ -4,7 +4,8 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-__Table of Contents:__
+### Table of Contents:
+* [Editor](#editor)
 * [Dashboard](#dashboard)
 * [Design Mode](#desing-mode)
 * [Code Mode](#code-mode)
@@ -13,26 +14,24 @@ __Table of Contents:__
 * [Profile](#profile)
 * [Export](#export-manager)
 * [Timeline](#timeline)
-* [Toolbar](#toolbar)
 * [Simultaneous Users](#simultaneous-users)
 
+## Editor
+
+Because every web-app development needs a battlefield, __Shift's Editor__ is equipped with everything to ease the process. Not only it has a similar look to a development IDE, it is one too. 
 
 ## Dashboard
 
-The __Dashboard__ is your project manager. The projects you create and collaborate with, will be sorted here by last changes. To create a new empty project all you need is to name it.
-
-## Toolbar
-
-The Shift's toolbar is similar to an IDE's. Here you can find not only navigation to the different modes (Design and Code), but also a live-preview of your app with device simulation, connection status, the Export Manager, a magic timeline and your profile.
+Your project manager. The projects you create and collaborate with, will be sorted here by last changes. To create a new empty project a name is all that's needed.
 
 ## Design Mode
 
-The __Canvas__ of your web-app. With the help of Shift's Component-Tree and a set of Component-based tools you will have everything you need to structure, style, connect and preview your components and content.
+The __Canvas__ of your web-app. With the help of Shift's __Builder__ tools and the __Canvas__ you will have everything you need to structure,style, connect and preview your components and content.
 <br><br><br>
 [__More on Design Mode__](design-mode.md)
 ## Code Mode
 
-Where code happens, isn't just written. In Code Mode you have all the magic that happens in the backbone of your app, a graphQL connection and it's queries, mutations and subscriptions, aswell as actions as part of the good old Redux store, the chance to develop custom components and where your Stylesheet is joined.
+Where code is. All the magic happening in the backbone of your app is setup and customised in __Code Mode__. Options such as __GraphQL__ connection and it's __Queries__, __Mutations__ and __Subscriptions__, aswell as __Actions__ as part of the good old Flux, the choice to develop __Custom Components__ and where your __Stylesheet__ code is collected.
 <br><br><br>
 [__More on Code Mode__](code-mode.md)
 
