@@ -32,7 +32,7 @@ The __Canvas__ of your web-app. With the help of Shift's Component-Tree and a se
 [__More on Design Mode__](design-mode.md)
 ## Code Mode
 
-Where the code happens, isn't just written. In Code Mode you have all the magic that happens in the backbone of your app, a graphQL connection and it's queries, mutations and subscriptions, aswell as actions as part of the good old Redux store, the chance to develop custom components and where your Stylesheet is joined.
+Where code happens, isn't just written. In Code Mode you have all the magic that happens in the backbone of your app, a graphQL connection and it's queries, mutations and subscriptions, aswell as actions as part of the good old Redux store, the chance to develop custom components and where your Stylesheet is joined.
 <br><br><br>
 [__More on Code Mode__](code-mode.md)
 
