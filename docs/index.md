@@ -6,11 +6,18 @@ sidebar_label: Overview
 
 ## Shift
 
-This is Shift, it will allow you to build things
+A __Web Application__ that develops __Web Applications__, with your help. 
+
+Imagine if each tool for web development was a part of a car, then __Shift__ would be a __Transformer__, and it would have been a good movie.
 
 ## Features
 
-* Multi-User in real-time
-* Component-based Web-App
-* Easy ready-to-deploy Export
+* Real-time Collaboration
+* Browser IDE
+* Development using React-redux paradigm
+* Hot-reloading
+* Dependency Manager
+* Preview
 * Timeline
+* Easy code Import
+* Even easier ready-to-deploy Export

@@ -2,7 +2,7 @@
   "docs": {
     "Quickstart": ["index", "beginner-tutorial"],
     "Editor": ["introduction", "real-time-collab", "timeline", "import", "export"],
-    "Design Mode": ["builder", "canvas", "component-tree", "class-editor", "style-editor", "component-settings", "flowprops", "state-settings", "toolbar"],
+    "Design Mode": ["builder", "canvas", "component-tree", "class-editor", "style-editor", "component-settings", "propsflow", "state-settings"],
     "Code Mode": ["actions", "custom-component", "dependency-manager", "graphiql", "stylesheet"],
     "Guides": ["shift-component"],
     "Shift Components": ["router", "route", "state", "data-connector", "replicate-list", "html-elements"]

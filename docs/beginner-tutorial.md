@@ -3,6 +3,7 @@ id: beginner-tutorial
 title: Beginner's Tutorial
 sidebar_label: Beginner's Tutorial
 ---
+<br><br>
 This is a beginner's tutorial that will cover different parts of a web-app development with Shift.
 
 For starters let's create a simple message board app that will store and persist messages submitted by the user.
@@ -193,9 +194,9 @@ Back in __Designer Mode__, we go to the Route we created as __Home__ and select 
 configuration of the DataConnector we set the `Query` option to __allMessages__ (our `Query` defined in Code Mode).
 
 In __ReplicateList's__ child, set the Configuration option `Item Name` to __message__, this will define how we reference each data item.
-Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in Flowprops select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
+Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in PropsFlow select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
 
-Now to set each message title and date to each righteous place we select the __Text__ child of __ReplicateList__ and in the Flowprops tab we
+Now to set each message title and date to each righteous place we select the __Text__ child of __ReplicateList__ and in the PropsFlow tab we
 bind it to `__message__ -> __title__` and select the `Link` type to Content. Do the same for the __Date__ child but don't forget to set the `Link` type to __Date__.
 
 Till this step, every change you've done to your app had the proper visual update in __Canvas__, it's a good practice to take advantage of this Shift's feature to debug everything that's happening in real-time.
@@ -217,13 +218,13 @@ In __DataConnector__ configuration set the `Query` option as __message__ and the
 
 ```
 {
-    id: props.flowProps.route.params.messageid
+    id: props.PropsFlow.route.params.messageid
 }
 ```
 
 "__DataConnector__ deal with it !" we said.
 
-Then just select each field for __title__, __description__ and __date__ and bind them in FlowProps tab like we did before.
+Then just select each field for __title__, __description__ and __date__ and bind them in PropsFlow tab like we did before.
 
 >__Tip:__ go to the __Home__ Route and start the preview, see how each link takes you to each individual message path and presentation.
 
@@ -289,7 +290,7 @@ message. The __date__ property is added to the variables fetched from the inputs
 Now in the __Form__ component's configuration we add the event __onSubmit__ with the __onSubmit__ action created.
 
 For the __title__ and __description__ inputs we go to each configuration and set the `Name` option as `title` and `description` respectively
-and add the Event __onChange__ to the __changeField__ Action. For each of them in the FlowProps tab add a Link for each property with the type __Value__.
+and add the Event __onChange__ to the __changeField__ Action. For each of them in the PropsFlow tab add a Link for each property with the type __Value__.
 
 For the button input we set the `Value` and `Type` as __Submit__.
 

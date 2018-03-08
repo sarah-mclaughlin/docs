@@ -3,12 +3,13 @@ id: component-tree
 title: The Component Tree
 sidebar_label: The Component Tree
 ---
-
-
-![Component-Tree](/docs/docs/assets/component_tree.png)
-
+<br><br>
 Using a hierarchical structure, the component-tree provides a visual overview of how components are linked. It's the easiest way to
 keep track of structure and to apply changes to each __Shift Component__.
+
+<br>
+![Component-Tree](/docs/docs/assets/component_tree.png)
+<br><br>
 
 The following commands are available in the Component-Tree:
 
