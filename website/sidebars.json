@@ -1,10 +1,10 @@
 {
   "docs": {
-    "Quickstart": ["index", "beginner-tutorial"],
-    "Editor": ["introduction", "real-time-collab", "timeline", "import", "export"],
-    "Design Mode": ["builder", "canvas", "component-tree", "class-editor", "style-editor", "component-settings", "propsflow", "state-settings"],
-    "Code Mode": ["state-code", "custom-component", "dependency-manager", "graphiql", "stylesheet"],
+    "Quickstart": ["index"],
+    "Walkthrough": ["managing-projects", "creating-custom-components",  "debugging"],
+    "Features": ["component-tree", "canvas", "class-editor", "style-editor", "component-settings", "propsflow", "state-settings", "custom-component", "dependency-manager", "graphiql", "stylesheet", "import", "export", "real-time-collab", "timeline"],
     "Guides": ["shift-component"],
-    "Shift Components": ["router", "route", "global-state", "local-state", "data-connector", "replicate-list", "html-elements"]
+    "Message Board Tutorial": ["the-plan", "create-a-new-project", "structure", "data", "content"],
+    "Shift Components": ["router", "route", "global-state", "local-state", "replicate-list", "html-elements"]
   }
 }

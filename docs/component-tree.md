@@ -1,7 +1,7 @@
 ---
 id: component-tree
-title: The Component Tree
-sidebar_label: The Component Tree
+title: Component Tree
+sidebar_label: Component Tree
 ---
 <br><br>
 Using a hierarchical structure, the component-tree provides a visual overview of how components are linked. It's the easiest way to
