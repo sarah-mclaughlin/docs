@@ -76,13 +76,13 @@ Now we configure each [__Route__](route.md) component. On the __component settin
 
 ![Routing](/docs/docs/assets/firsttutorial_routing2.gif)
 
-Starting with the __Home Route__ we will add a [__DataConnector__](dataconnector.md) to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
+Starting with the __Home Route__ we will add a [__Query__](query.md) component to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
 <br><br>
 For each __Message__ we will want to show its __Title__ (which will be a link to the individual message) and __Date__, so we add the following components:
 
 ![Home](/docs/docs/assets/firsttutorial_home.png)
 
-For the __Message Route__ we will want also a [__DataConnector__](dataconnector.md) to fetch our __Message__ and each component to display its previous data and the __Description__ aswell:
+For the __Message Route__ we will want also a [__Query__](query.md) component to fetch our __Message__ and each component to display its previous data and the __Description__ aswell:
 
 ![Message](/docs/docs/assets/firsttutorial_message.png)
 
@@ -190,11 +190,11 @@ Now we have messages in our DB, it's time to see it.
 
 ### Home
 
-Back in __Designer Mode__, we go to the Route we created as __Home__ and select the previously created __DataConnector__ component. On the
-configuration of the DataConnector we set the `Query` option to __allMessages__ (our `Query` defined in Code Mode).
+Back in __Designer Mode__, we go to the Route we created as __Home__ and select the previously created __Query__ component. On the
+configuration of the __Query__ we set the `Query` option to __allMessages__ (our `Query` defined in Code Mode).
 
 In __ReplicateList's__ child, set the Configuration option `Item Name` to __message__, this will define how we reference each data item.
-Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in PropsFlow select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
+Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in __Props Flow__ tab select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
 
 Now to set each message title and date to each righteous place we select the __Text__ child of __ReplicateList__ and in the PropsFlow tab we
 bind it to `__message__ -> __title__` and select the `Link` type to Content. Do the same for the __Date__ child but don't forget to set the `Link` type to __Date__.
@@ -203,28 +203,28 @@ Till this step, every change you've done to your app had the proper visual updat
 
 In our plan there was a link that would take us to each individual message, and since we forgot to add it on purpose, let's see how to quickly shortcut and deal with it in Shift.
 
-We add a __Link__ component as child of the __ReplicateList__ and then we drag the __Text__ component (which is our message title) into the  it. In __Link__ Configuration set the `Link` option to __/message/${props.message.id}__. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __DataConnector__ and fed from the __ReplicateList__.
+We add a __Link__ component as child of the __ReplicateList__ and then we drag the __Text__ component (which is our message title) into the  it. In __Link__ Configuration set the `Link` option to __/message/${props.message.id}__. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __Query__ and fed from the __ReplicateList__.
 
 >As you have noticed the Component-Tree works with Components and Html elements respecting the order of the well known DOM Tree. That's why the __Link__ is added as a parent of __Text__ and not the other way around.
 
 
 ### Message
 
-Since we are routing every message by its `id` as a parameter defined in this __Message__ route (`/message/:messageid`), set a messageid default path in configuration. With the default message set is now easier to connect all the data to each field.
+Since we are routing every message by its `id` as a parameter defined in this __Message__ route (`/message/:messageid`), set a messageid default path in configuration. With the default message set it's now easier to connect all the data to each field.
 
-We need to tell our __DataConnector__ to deal with it.
+We need to tell our __Query__ to deal with it.
 
-In __DataConnector__ configuration set the `Query` option as __message__ and the `Arguments` as:
+In __Query__ configuration set the `Query` option as __message__ and the `Arguments` as:
 
 ```
 {
-    id: props.PropsFlow.route.params.messageid
+    id: props.flowProps.route.params.messageid
 }
 ```
 
-"__DataConnector__ deal with it !" we said.
+"__Query__ deal with it !" we said.
 
-Then just select each field for __title__, __description__ and __date__ and bind them in PropsFlow tab like we did before.
+Then just select each field for __title__, __description__ and __date__ and bind them in __Props Flow__ tab like we did before.
 
 >__Tip:__ go to the __Home__ Route and start the preview, see how each link takes you to each individual message path and presentation.
 
@@ -232,9 +232,9 @@ We are done here. How quick was it?
 
 ### PostMessage
 
-For the __PostMessage__ Route we will need to configure the __State__ component, and __Actions__ for it.
+For the __PostMessage__ Route we will need to configure the __Local State__ component, and __Actions__ for it.
 
-In our __State__ component in State configuration tab we set the default state:
+In our __Local State__ component in __State Settings__ tab we set the default state:
 
 ```
 {
@@ -247,6 +247,7 @@ And add two new __Actions__:
 
 
 Name: changeField
+Template: Synchronous state change
 ```
 export default ({ state, event }) => {
   event.preventDefault();
@@ -260,28 +261,45 @@ export default ({ state, event }) => {
 > Action for every change in the target values.
 
 Name: onSubmit
+Type: Do Mutation
 ```
-export default ({ state, event, history}) => {
+export default ({ state, event, eventComponentProps, history }) => {
   event.preventDefault();
 
-  return async ({ mutate, getMutation, getState, setState}) => {
-    const addDateVariable = Object.assign({}, getState(), {
-          date: Date.now(),
-    });
+  return async ({ getState, setState, mutate, getMutation }) => {
+    setState(Object.assign({}, getState(), {
+      loading: true,
+    }));
 
-    const data = await mutate({ 
-      mutation: getMutation("addMessage"),
-      variables: addDateVariable
-    });
+    try {
+      // set the date for the submitted message
+      const addDateVariable = Object.assign({}, getState(), {
+        date: new Date().toISOString(),
+      });
 
-    setState({
-      title: "",
-      description: "",
-    });
+      const response = await mutate({
+        mutation: getMutation('addMessage'),
+        variables: addDateVariable
+      });
 
-    history.push(`/message/${data.data.createMessage.id}`);
+      setState(Object.assign({}, getState(), {
+        title: "",
+        description: "",
+        error: null,
+        loading: false,
+      }));
+
+      // change path to the newly created message
+      history.push(`/message/${response.data.createMessage.id}`);
+    } catch (e) {
+      setState(Object.assign({}, getState(), {
+        error: e,
+        loading: false,
+      }));
+    }
   };
 }
+
 ```
 
 > Action for submitting the data gathered from the __Form__, setting the state back to it's default and send the user to the newly created
