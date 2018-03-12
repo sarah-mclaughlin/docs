@@ -1,23 +1,24 @@
 ---
 id: index
-title: Overview
-sidebar_label: Overview
+title: Know the Studio
+sidebar_label: Know the Studio
 ---
+<br><br>
 
-## Shift
 
-A __Web Application__ that develops __Web Applications__, with your help. 
-
-Imagine if each tool for web development was a part of a car, then __Shift__ would be a __Transformer__, and it would have been a good movie.
-
-## Features
-
-* Real-time Collaboration
-* Browser IDE
-* Development using React-redux paradigm
-* Hot-reloading
-* Dependency Manager
-* Preview
-* Timeline
-* Easy code Import
-* Even easier ready-to-deploy Export
+__Real-time Collaboration__
+<br><br>
+__Browser IDE__
+<br><br>
+__Hot-reloading__
+<br><br>
+__Dependency Manager__
+<br><br>
+__Preview__ - toggles between the preview and development mode of __Shift__, allowing you to see how your project will look when published.
+<br><br>
+__Timeline__
+<br><br>
+__Import__
+<br><br>
+__Export__
+<br><br>

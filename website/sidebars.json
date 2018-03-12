@@ -1,7 +1,6 @@
 {
   "docs": {
-    "Quickstart": ["index"],
-    "Walkthrough": ["managing-projects", "creating-custom-components",  "debugging"],
+    "Walkthrough": ["index", "managing-projects", "style-without-code", "dragndrop",  "debugging"],
     "Features": ["component-tree", "canvas", "class-editor", "style-editor", "component-settings", "propsflow", "state-settings", "custom-component", "dependency-manager", "graphiql", "stylesheet", "import", "export", "real-time-collab", "timeline"],
     "Guides": ["shift-component"],
     "Message Board Tutorial": ["the-plan", "create-a-new-project", "structure", "data", "content"],
