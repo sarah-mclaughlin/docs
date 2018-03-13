@@ -1,9 +1,18 @@
 {
   "docs": {
-    "Walkthrough": ["index", "managing-projects", "style-without-code", "dragndrop",  "debugging"],
-    "Features": ["component-tree", "canvas", "class-editor", "style-editor", "component-settings", "propsflow", "state-settings", "custom-component", "dependency-manager", "graphiql", "stylesheet", "import", "export", "real-time-collab", "timeline"],
-    "Guides": ["shift-component"],
-    "Message Board Tutorial": ["the-plan", "create-a-new-project", "structure", "data", "content"],
-    "Shift Components": ["router", "route", "global-state", "local-state", "replicate-list", "html-elements"]
+    "Getting Started": ["index"],
+    "Tutorials": ["message-board-tutorial"],
+    "Dashboard": ["dashboard-overview", "dashboard-profile", "dashboard-organization"],
+    "Features": ["canvas-overview", "components-overview", "styles-overview", "state-overview"],
+    "Props": ["props-overview"],
+    "Actions/Events": ["actions-events-overview"],
+    "Routing": ["routing-overview"],
+    "GraphQL": ["graphql-overview"],
+    "Dependency Manager": ["dependency-manager-overview"],
+    "Files": ["files-overview"],
+    "Timeline": ["timeline-overview"],
+    "Importing": ["importing-overview"],
+    "Exporting": ["exporting-overview"],
+    "Shortcuts": ["shortcuts"]
   }
 }

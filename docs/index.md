@@ -1,7 +1,7 @@
 ---
 id: index
-title: Know the Studio
-sidebar_label: Know the Studio
+title: Introduction
+sidebar_label: Introduction
 ---
 <br><br>
 

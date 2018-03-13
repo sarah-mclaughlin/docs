@@ -1,7 +1,7 @@
 ---
-id: timeline
-title: Timeline
-sidebar_label: Timeline
+id: timeline-overview
+title: Overview
+sidebar_label: Overview
 ---
 
 <br><br>
