@@ -2,8 +2,8 @@
   "docs": {
     "Getting Started": ["index"],
     "Tutorials": ["message-board-tutorial"],
-    "Dashboard": ["dashboard-overview", "dashboard-profile", "dashboard-organization"],
-    "Features": ["canvas-overview", "components-overview", "styles-overview", "state-overview"],
+    "Dashboard": ["dashboard-overview", "dashboard-profile", "dashboard-organization", "dashboard-projects"],
+    "Features": ["builder-overview", "canvas-overview", "components-overview", "styles-overview", "state-overview"],
     "Props": ["props-overview"],
     "Actions/Events": ["actions-events-overview"],
     "Routing": ["routing-overview"],
