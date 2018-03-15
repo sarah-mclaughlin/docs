@@ -1,7 +1,7 @@
 ---
 id: index
-title: Introduction
-sidebar_label: Introduction
+title: Getting Started
+sidebar_label: Getting Started
 ---
 <br><br>
 

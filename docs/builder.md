@@ -1,10 +1,10 @@
 ---
-id: builder-overview
+id: builder
 title: Builder
 sidebar_label: Builder
 ---
-
-
+Our development toolbox, everything you will need is inside the builder.
+<br><br>
 ## Sidebar
 
 ## Component-Tree

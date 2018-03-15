@@ -1,7 +1,7 @@
 ---
-id: dependency-manager-overview
-title: Overview
-sidebar_label: Overview
+id: dependency-manager
+title: Depedency Manager
+sidebar_label: Depedency Manager
 ---
 <br><br>
 The __Dependency Manager__ is as the name states, a dependency manager, for npm. Which means you can import and manage any package you need for better development. Enabling you control

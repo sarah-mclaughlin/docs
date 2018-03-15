@@ -1,10 +1,11 @@
 ---
 id: message-board-tutorial
-title: Messabe Board Tutorial
-sidebar_label: Messabe Board
+title: Message Board Tutorial
+sidebar_label: Message Board Tutorial
 ---
 
-
+Learn the basics with simple steps through this simple Message Board app development in Shift.
+<br><br>
 ## The Plan
 To start our project we need a plan.
 <br><br>

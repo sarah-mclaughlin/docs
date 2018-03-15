@@ -1,18 +1,9 @@
 {
   "docs": {
-    "Getting Started": ["index"],
+    "Walkthrough": ["index"],
     "Tutorials": ["message-board-tutorial"],
-    "Dashboard": ["dashboard-overview", "dashboard-profile", "dashboard-organization", "dashboard-projects"],
-    "Features": ["builder-overview", "canvas-overview", "components-overview", "styles-overview", "state-overview"],
-    "Props": ["props-overview"],
-    "Actions/Events": ["actions-events-overview"],
-    "Routing": ["routing-overview"],
-    "GraphQL": ["graphql-overview"],
-    "Dependency Manager": ["dependency-manager-overview"],
-    "Files": ["files-overview"],
-    "Timeline": ["timeline-overview"],
-    "Importing": ["importing-overview"],
-    "Exporting": ["exporting-overview"],
-    "Shortcuts": ["shortcuts"]
+    "Features": ["dashboard", "builder", "canvas", "components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "files", "timeline", "importing", "exporting"],
+    "Components": ["router", "route", "replicate-list"],
+    "References": ["shortcuts"]
   }
 }

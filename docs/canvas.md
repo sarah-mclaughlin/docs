@@ -1,11 +1,8 @@
 ---
-id: canvas-overview
+id: canvas
 title: Canvas
 sidebar_label: Canvas
 ---
-
-
-## Overview
 
 ## Toolbar
 

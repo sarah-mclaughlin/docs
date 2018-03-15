@@ -1,12 +1,9 @@
 ---
-id: styles-overview
+id: styles
 title: Styles
 sidebar_label: Styles
 ---
-
-
-## Overview
-
+Styles
 ## Managing Classes
 
 ## Managing Styles
