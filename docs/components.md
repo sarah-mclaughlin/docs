@@ -13,6 +13,12 @@ Everything inside Shift is made of components.
 
 ## Component Settings
 
+### Default Component Settings
+* Label -
+* Events -
+* Inline Styles -
+* Custom Properties -
+
 ## Custom Components
 Maybe you prefer the DIY option, well __Shift__ enables you to develop your own __Shift Component__ with the same development template.
 Each component

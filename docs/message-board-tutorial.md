@@ -45,7 +45,9 @@ First we will need to add the [__Router__](router.md) component to handle all th
 
 ![Routing](/docs/docs/assets/firsttutorial_routing1.gif)
 
-> You can delete the default children of each created component.
+For default the component [__Router__](router.md) has two [__Route__](route.md) components as __defaultChildren__.
+
+> You can delete the default children of each created component and add new __Route__ components, or configure them.
 
 Now we configure each [__Route__](route.md) component. On the __component settings__ tab we set the `Label`, `Path` and `Default path` settings for each of them:
 

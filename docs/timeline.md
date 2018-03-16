@@ -16,4 +16,9 @@ With it's visual presentation you can:
 * date and author of that operation.
 
 ![Timeline](/docs/docs/assets/timeline.gif)
+
+## Rollback
+
+## Operation Manager
+
 <br><br><br>
