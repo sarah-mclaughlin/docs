@@ -4,15 +4,18 @@ title: Routing
 sidebar_label: Routing
 custom_edit_url: test
 ---
-`Routing is the process of selecting a path for traffic in a network, or between or across multiple networks.``
+`"Routing is the process of selecting a path for traffic in a network, or between or across multiple networks."`
 
-Every web application is composed by multiple pages. In a static page environment every link and location change would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.).
+In a static page environment every link and location changes would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.).
 
-Using __React's Router__, Shift provides __dynamic routing__ in your application in a __easy-to-configure__ way.
+
+Every web application is composed by multiple pages too. Routing allows you to configure routes that show only the components you specify on the page depending on the route. For example, if you have a long list of messages and only want to show the unread messages when they click on a ‘Unread’ button, you can do that with __Shift's Routing__.
+
+Shift provides __dynamic routing__ in your application in a __easy-to-configure__ way.
 
 ## Dynamic Routing
 
-With __dynamic routing__ your app knows the different locations and links and how to deal with them. Making it easier to match a pathname and enabling a default behaviour in case it doesn't.
+With __dynamic routing__ your app "learns and knows" the different locations and links and how to deal with them. Making it easier to match a pathname and enabling a default behaviour in case it doesn't.
 
 Since __Shift__ works with components, routing will dictate which component to render in each matching.
 <br><br>
@@ -44,7 +47,7 @@ In case the path gets specific, and a path to a specific user is needed like  `/
 
 The path `/users/:userid` should not be included in the __Router__ list because it would match the UserListRoute, and that's not its purpose.
 
-In this case we use __Route__ components to better specify the matching.
+In this case we use __Route__ components as children of the __UserListRoute__ to better specify the matching.
 
 | Label    | Path           | Component  | Exact match |
 |----------|----------------|------------|-------------|

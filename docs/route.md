@@ -4,7 +4,7 @@ title: Route
 sidebar_label: Route
 ---
 
-`"The Route component is perhaps the most important component in React Router to understand and learn to use well. Its most basic responsibility is to render some UI when a location matches the route’s path."`
+`"Its most basic responsibility is to render a specific component when a location matches the route’s path."`
 
 ## Component Settings
 Default Component settings, __Path__, __Exact match__, __Default Path__

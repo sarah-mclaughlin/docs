@@ -3,7 +3,7 @@
     "Walkthrough": ["index"],
     "Tutorials": ["message-board-tutorial"],
     "Features": ["dashboard", "builder", "canvas", "components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "files", "timeline", "importing", "exporting"],
-    "Components": ["router", "route", "replicate-list"],
+    "Components": ["router", "route", "link", "replicate-list"],
     "References": ["shortcuts"]
   }
 }
