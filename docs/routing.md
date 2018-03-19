@@ -85,7 +85,7 @@ Normal HTML Links would enforce a page reload, since we are building an applicat
 
 __Shift__ provides a [__Link__](link.md) component which is an extended version of the standard <Link> component from __React Router__.
 
-For more on __Link__ usage check the component page.
+For more on __Link__ usage check the [__Link__](link.md) component page.
 
 ## References
 

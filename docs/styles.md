@@ -3,12 +3,61 @@ id: styles
 title: Styles
 sidebar_label: Styles
 ---
-Styles
+
+A __Style__ contains style information for a document, or part of a document. By default, the style is expected to be written in [__CSS__](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+_"The __CSS__ (__Cascading Style Sheets__) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media."_
+
+There are two ways to style an element:
+* Write CSS properties inline
+* Create classes in CSS and add them to an element
+
+__Shift__ also provides this two ways to style by either __writing CSS__ or __using a visual interface__ for selecting each CSS properties.
+
 ## Managing Classes
+Classes are reusable styles that can be added to HTML elementsand they enable a single HTML element to have multiple different looks with CSS.
+
+__Shift__ applies this concept to __components__ rendering too.
+
+To easily manage and keep track of all the classes in your project, these are organised and applied with the UI __Shift's Class Editor__
+### Class Editor
+The Class Editor provides you a visual UI where you can create, delete and delete the classes in your project. These are sepparated in two categories, __Applied__ and __All__.
+
+Not only you can manage your classes but you can also have information on where each class is used and apply __conditionals__.
+### Access Class Editor
+* To access the __Class Editor__ open Shift's __Builder__ and select a component.
+* Open the __Class Editor__ tab in the __Sidebar__
+### Applied Classes
+In this category you can manage classes for a specific component. Remember that the first reason to have classes in the first place is to enable their re-use, so even if you are applying a class to a specific component, it will be available in the __All__ category for later re-use.
+### - Create Class
+* In the __Class Editor__ select the __Applied__ category
+* Type the name of the class to be created
+* Select __Add class only__ or if you want to create a class and style it, select __Add class and create style__
+### - Rename Class
+* In the __Class Editor__ select the __Applied__ category
+* Select the three dots icon at the right of the to be renamed class
+* Select __Rename Class__
+### - Remove Class
+* In the __Class Editor__ select the __Applied__ category
+* Select the three dots icon at the right of the to be removed class
+* Select __Remove Class__
+### All Classes
+In this category you have all the classes available to your project. You can search for any Class, edit or apply it to a selected component.
+### - Search for a Class
+* In the __Class Editor__ select the __All__ category
+* Type the name of the class you wish to find
+
 
 ## Managing Styles
+### Access Style Editor
+* To access the __Style Editor__ open Shift's __Builder__ and select a component.
+* Open the __Style Editor__ tab in the __Sidebar__
+### Style Editor
+To easily style your components, __Style Editor__ offers a visual UI with a toolset of __CSS__ properties enabling you to style with just a few clicks.
 
-## Style Editor
+From simple default __CSS__ properties to __Layout__, __Typography__, __Borders__ and __Effects__ to __CSS3__ __Shadows__, __Transforms__, __Flex__ __Box__ and __Media__ __Queries__.
+### All Styles
+### Applied Styles
 
 
 ## Media Queries

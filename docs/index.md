@@ -4,21 +4,26 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 <br><br>
+To get started with using __Shift__, please refer to this guide for configuration and start up.
 
 
-__Real-time Collaboration__
-<br><br>
-__Browser IDE__
-<br><br>
-__Hot-reloading__
-<br><br>
-__Dependency Manager__
-<br><br>
-__Preview__ - toggles between the preview and development mode of __Shift__, allowing you to see how your project will look when published.
-<br><br>
-__Timeline__
-<br><br>
-__Import__
-<br><br>
-__Export__
-<br><br>
+## Minimum Requirements
+In order to you run Shift, you must be running Google Chrome (version X) or higher. Shift runs on your browser, so you don’t need to install it, and runs perfectly on any machine.
+
+## Accessing Shift
+If you haven’t done so already, you can access Shift [__here__]().
+
+## Purchasing a Shift account
+
+## Registration
+To register
+
+## Using Shift on other computers
+Shift can be used in any computer without the need to export or import any configuration since it saves your data in the cloud, everything is in the cloud, cloud.
+
+## Contacting Support
+Need further help getting started with Shift? If you ever come across any issues relating to registering Shift, or anything else, then you can find more helpful information in the Support section of our Forum or contact our team.
+
+We hope you enjoy using Shift!
+
+## Useful Links

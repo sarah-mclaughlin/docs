@@ -9,7 +9,7 @@ Declarative routing from [__React's Router__](https://reacttraining.com/react-ro
 Router is a collection of navigational components. Predominantly composed of [__Route__](route.md) children.
 
 ## Component Settings
-- [Default Component settings](components.md#default-component-settings)
+- [__Default Component settings__](components.md#default-component-settings)
 
 ## Default children
 

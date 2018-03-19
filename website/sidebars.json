@@ -1,9 +1,9 @@
 {
   "docs": {
-    "Walkthrough": ["index"],
+    "Walkthrough": ["index", "styling-a-component"],
     "Tutorials": ["message-board-tutorial"],
     "Features": ["dashboard", "builder", "canvas", "components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "files", "timeline", "importing", "exporting"],
-    "Components": ["router", "route", "link", "replicate-list"],
+    "Components": ["router", "route", "link", "text", "replicate-list"],
     "References": ["shortcuts"]
   }
 }

@@ -7,7 +7,10 @@ sidebar_label: Route
 `"Its most basic responsibility is to render a specific component when a location matches the route’s path."`
 
 ## Component Settings
-Default Component settings, __Path__, __Exact match__, __Default Path__
+- [__Default Component settings__](components.md#default-component-settings)
+- __Path__ - Specifies the pathname to be matched for the Route
+- __Exact match__ - Specifies if the match for the __Path__ is to be exact
+- __Default Path__ - Specifies the default path for the Route
 
 <br>
 ### Path
