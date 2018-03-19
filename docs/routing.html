@@ -1,0 +1,93 @@
+<html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Routing · Shift University</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Routing · Shift University"/><meta property="og:type" content="website"/><meta property="og:url" content="https://shift-studio.github.io/docs/index.html"/><meta property="og:description" content="`&quot;Routing is the process of selecting a path for traffic in a network, or between or across multiple networks.&quot;`"/><link rel="shortcut icon" href="/docs/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="../script/test.js"></script><link rel="stylesheet" href="/docs/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/img/shift-logo.svg"/><h2 class="headerTitle">Shift University</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Features</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Walkthrough</h3><ul><li class="navListItem"><a class="navItem" href="/docs/docs/index.html">Getting Started</a></li></ul></div><div class="navGroup navGroupActive"><h3>Tutorials</h3><ul><li class="navListItem"><a class="navItem" href="/docs/docs/message-board-tutorial.html">Message Board Tutorial</a></li></ul></div><div class="navGroup navGroupActive"><h3>Features</h3><ul><li class="navListItem"><a class="navItem" href="/docs/docs/dashboard.html">Dashboard</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/builder.html">Builder</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/canvas.html">Canvas</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/components.html">Components</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/styles.html">Styles</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/state.html">State</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/props.html">Props</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/actions-events.html">Actions/Events</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/docs/routing.html">Routing</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/graphql.html">GraphQL</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/dependency-manager.html">Depedency Manager</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/files.html">Files</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/timeline.html">Timeline</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/importing.html">Importing</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/exporting.html">Exporting</a></li></ul></div><div class="navGroup navGroupActive"><h3>Components</h3><ul><li class="navListItem"><a class="navItem" href="/docs/docs/router.html">Router</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/route.html">Route</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/link.html">Link</a></li><li class="navListItem"><a class="navItem" href="/docs/docs/replicate-list.html">ReplicateList</a></li></ul></div><div class="navGroup navGroupActive"><h3>References</h3><ul><li class="navListItem"><a class="navItem" href="/docs/docs/shortcuts.html">Shortcuts</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="test" target="_blank">Edit</a><h1>Routing</h1></header><article><div><span><p><code>&quot;Routing is the process of selecting a path for traffic in a network, or between or across multiple networks.&quot;</code></p>
+<p>In a static page environment every link and location changes would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.).</p>
+<p>Every web application is composed by multiple pages too. Routing allows you to configure routes that show only the components you specify on the page depending on the route. For example, if you have a long list of messages and only want to show the unread messages when they click on a ‘Unread’ button, you can do that with <strong>Shift's Routing</strong>.</p>
+<p>Shift provides <strong>dynamic routing</strong> in your application in a <strong>easy-to-configure</strong> way.</p>
+<h2><a class="anchor" aria-hidden="true" id="dynamic-routing"></a><a href="#dynamic-routing" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dynamic Routing</h2>
+<p>With <strong>dynamic routing</strong> your app &quot;learns and knows&quot; the different locations and links and how to deal with them. Making it easier to match a pathname and enabling a default behaviour in case it doesn't.</p>
+<p>Since <strong>Shift</strong> works with components, routing will dictate which component to render in each matching.
+<br><br>
+<strong>Routing components</strong>:</p>
+<ul>
+<li><a href="/docs/docs/router.html"><strong>Router</strong></a></li>
+<li><a href="/docs/docs/route.html"><strong>Route</strong></a></li>
+</ul>
+<p>Let's learn from an example:</p>
+<table>
+<thead>
+<tr><th>Label</th><th>Path</th><th>Component</th><th>Exact match</th></tr>
+</thead>
+<tbody>
+<tr><td>HomeRoute</td><td>/</td><td>Home</td><td><center> x  </center></td></tr>
+<tr><td>UserListRoute</td><td>/users</td><td>UsersList</td><td></td></tr>
+<tr><td>LogoutRoute</td><td>/logout</td><td>Logout</td><td></td></tr>
+</tbody>
+</table>
+<p>If the location for the application was:</p>
+<table>
+<thead>
+<tr><th>Path</th><th>Match</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://www.myapp.com/">https://www.myapp.com/</a></td><td>It would match the HomeRoute and render Home component</td></tr>
+<tr><td><a href="https://www.myapp.com/users">https://www.myapp.com/users</a></td><td>It would match the UserListRoute and render UsersList component</td></tr>
+<tr><td><a href="https://www.myapp.com/logout">https://www.myapp.com/logout</a></td><td>It would match the LogoutRoute and render Logout component</td></tr>
+</tbody>
+</table>
+<blockquote>
+<p>HomeRoute is configured with <strong>Exact match</strong> otherwise it would match the other Routes and only render Home component no matter the path, since all the paths start with '/'</p>
+</blockquote>
+<p>In case the path gets specific, and a path to a specific user is needed like  <code>/users/:userid</code>  <strong>Nested Routes</strong> should be used.</p>
+<h2><a class="anchor" aria-hidden="true" id="nested-routes"></a><a href="#nested-routes" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Nested Routes</h2>
+<p>The path <code>/users/:userid</code> should not be included in the <strong>Router</strong> list because it would match the UserListRoute, and that's not its purpose.</p>
+<p>In this case we use <strong>Route</strong> components as children of the <strong>UserListRoute</strong> to better specify the matching.</p>
+<table>
+<thead>
+<tr><th>Label</th><th>Path</th><th>Component</th><th>Exact match</th></tr>
+</thead>
+<tbody>
+<tr><td>Userlist</td><td>/users</td><td>UserList</td><td><center> x  </center></td></tr>
+<tr><td>UserRoute</td><td>/users/:userId</td><td>SingleUser</td><td></td></tr>
+</tbody>
+</table>
+<p>If the location for the application was:</p>
+<table>
+<thead>
+<tr><th>Path</th><th>Match</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://www.myapp.com/users">https://www.myapp.com/users</a></td><td>It would match the UserListRoute and render UsersList component</td></tr>
+<tr><td><a href="https://www.myapp.com/users/:userId">https://www.myapp.com/users/:userId</a></td><td>It would match the UserRoute and render SingleUser component with the <code>userId</code> as a parameter</td></tr>
+</tbody>
+</table>
+<p>This way when rendering the UserListRoute it will render the UserList component if the match is <strong>Exactly</strong> <code>/users</code> and the UserRoute uses a
+<strong>path param</strong> to capture the pathname part after.</p>
+<blockquote>
+<p>Routes that share a common prefix should be grouped in the same component. Not only for better structure, since it makes parent Routes simple, but to render content that is common across every route with the same preffix</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="path-params"></a><a href="#path-params" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Path Params</h2>
+<p>For situations where it is important to capture variables in a pathname we use Path params.</p>
+<p>In the <code>/users/:userId</code> case, the <code>:userId</code> means that the part of the pathname that comes after <code>/users/</code> will be captured.</p>
+<p>All the variables captured in a <strong>Route</strong> will be stored in its <code>match.params</code>object and in this case <code>match.params.userId</code>.</p>
+<p>In <strong>Shift</strong> this <code>match</code> object will be part of the <a href="/docs/docs/propsflow.html"><strong>PropsFlow</strong></a> in the <strong>children</strong> components of the matched <strong>Route</strong>. It means you can access this captured parameter with:</p>
+<pre><code class="hljs">props<span class="hljs-selector-class">.match</span><span class="hljs-selector-class">.params</span><span class="hljs-selector-class">.userId</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="links"></a><a href="#links" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Links</h2>
+<p>Normal HTML Links would enforce a page reload, since we are building an application and we can do this without reloading the entire page, we use the <strong>Link</strong> component instead.</p>
+<p><strong>Shift</strong> provides a <a href="/docs/docs/link.html"><strong>Link</strong></a> component which is an extended version of the standard <Link> component from <strong>React Router</strong>.</p>
+<p>For more on <strong>Link</strong> usage check the component page.</p>
+<h2><a class="anchor" aria-hidden="true" id="references"></a><a href="#references" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h2>
+<ul>
+<li><a href="https://reacttraining.com"><strong>React Router</strong></a></li>
+<li><a href="https://reacttraining.com/core/guides/philosophy/dynamic-routing"><strong>Routing</strong></a></li>
+<li><a href="/docs/docs/router.html"><strong>Router</strong></a></li>
+<li><a href="/docs/docs/route.html"><strong>Route</strong></a></li>
+<li><a href="/docs/docs/link.html"><strong>Link</strong></a></li>
+</ul>
+<p><br><br><br></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="actions-events.html">← Actions/Events</a><a class="docs-next button" href="graphql.html">GraphQL →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#dynamic-routing">Dynamic Routing</a></li><li><a href="#nested-routes">Nested Routes</a></li><li><a href="#path-params">Path Params</a></li><li><a href="#links">Links</a></li><li><a href="#references">References</a></li></ul></nav></div></div></body></html>
