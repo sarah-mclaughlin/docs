@@ -4,12 +4,12 @@ title: Routing
 sidebar_label: Routing
 custom_edit_url: test
 ---
-`"Routing is the process of selecting a path for traffic in a network, or between or across multiple networks."`
+`"Routing is the process of selecting a path for traffic in a network, between or across multiple networks."`
 
 In a static page environment every link and location changes would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.).
 
 
-Every web application is composed by multiple pages too. Routing allows you to configure routes that show only the components you specify on the page depending on the route. For example, if you have a long list of messages and only want to show the unread messages when they click on a ‘Unread’ button, you can do that with __Shift's Routing__.
+Every web application is composed by multiple pages too. Routing allows you to configure routes that show only the components you specify on the page depending on the route. For example, if you have a long list of messages and only want to show the unread messages when the user clicks on a ‘Unread’ button, you can do that with __Shift's Routing__.
 
 Shift provides __dynamic routing__ in your application in a __easy-to-configure__ way.
 
