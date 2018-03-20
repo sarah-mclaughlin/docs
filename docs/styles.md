@@ -49,6 +49,7 @@ In this category you have all the classes available to your project. You can sea
 
 
 ## Managing Styles
+Styles are simply a group of CSS properties that are applied to dictate how an element is rendered. In this case how our components are rendered.
 ### Access Style Editor
 * To access the __Style Editor__ open Shift's __Builder__ and select a component.
 * Open the __Style Editor__ tab in the __Sidebar__
@@ -57,7 +58,9 @@ To easily style your components, __Style Editor__ offers a visual UI with a tool
 
 From simple default __CSS__ properties to __Layout__, __Typography__, __Borders__ and __Effects__ to __CSS3__ __Shadows__, __Transforms__, __Flex__ __Box__ and __Media__ __Queries__.
 ### All Styles
+In this category you have all the styles present in your project and you can search through them by typing a style name or create a new one by selecting the __Create style from search input__ option. It is possible also to edit a style by simply clicking it and also see its information and content preview.
 ### Applied Styles
+In this category you have all the styles that are applied to the selected component. You can edit a style by simply clicking it and also see its information and content preview.
 
 
 ## Media Queries
@@ -102,4 +105,4 @@ The media Query will stay stored in the previously chosen __Class__ selector and
 
 
 ## References
-* [__Media Queries__](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+* __Media Queries__ - [developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)

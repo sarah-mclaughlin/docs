@@ -4,20 +4,25 @@ title: Routing
 sidebar_label: Routing
 custom_edit_url: test
 ---
-`"Routing is the process of selecting a path for traffic in a network, between or across multiple networks."`
+`Routing is the set of rules that match the URL where the user is with what you want to show in your Application`
+<br><br><br>
 
-In a static page environment every link and location changes would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.).
+## Static Routing
+In a static page environment every link and location changes would be relative to a file and filename. A page for each location (ex: About, Contacts, Home, etc.) and in each page different elements are to be shown or even in some cases the same element to be shown across different pages.
 
+For that purpose static pages navigation has some disadvantages, you can't easily reuse code and functionality because you need to define each element in every page. Another issue would be for the navigation handling control, since any page url would be accessible without easy filtering and in case the user steps in a malformed url, the good old 404 page would take place, aswell as many other issues.
 
-Every web application is composed by multiple pages too. Routing allows you to configure routes that show only the components you specify on the page depending on the route. For example, if you have a long list of messages and only want to show the unread messages when the user clicks on a ‘Unread’ button, you can do that with __Shift's Routing__.
-
-Shift provides __dynamic routing__ in your application in a __easy-to-configure__ way.
+Imagine for example a Header from a page, a "fixed navigation menu" let's say, you would have to replicate the code to any page using this fixed menu (usually every page), re-configure every link in each header and if for some reason any of this went wrong, you wouldn't have a fallback system, a default path or filter to handle any of it.
 
 ## Dynamic Routing
 
-With __dynamic routing__ your app "learns and knows" the different locations and links and how to deal with them. Making it easier to match a pathname and enabling a default behaviour in case it doesn't.
+Every web application is composed by multiple locations too, but with the concept of __Dynamic Routing__ it gets easier, quicker and safer to navigate. 
 
-Since __Shift__ works with components, routing will dictate which component to render in each matching.
+In __Shift__ you have __dynamic routing__ where there are no pages, but instead you have [__Components__](compoments.md) being rendered conditionally to whether a specified path matches the current browser URL. 
+
+If looking at the same Header example using __Shift's__ dynamic routing, to have a component that we want rendered in every location, we set it once to match a set of url paths and in those paths and locations the component will be rendered. That way the Header will be rendered no matter the additional content of each location. We can also set a default path in case the url is malformed, and many other features, quicker, simpler and re-using.
+
+To change what your app shows according to the current URL you have routing components. These components allow you to conditionally render a set of components based on the current URL. What this means is that they will only render the components inside them if a given `path` property matches the current URL. This allows you to have components that are visible in any URL path, and parts that only render for certain URLs
 <br><br>
 __Routing components__:
 * [__Router__](router.md)
@@ -90,10 +95,10 @@ For more on __Link__ usage check the [__Link__](link.md) component page.
 ## References
 
 
-* [__React Router__](https://reacttraining.com)
-* [__Routing__](https://reacttraining.com/core/guides/philosophy/dynamic-routing)
 * [__Router__](router.md)
 * [__Route__](route.md)
 * [__Link__](link.md)
+* __React Router__ - [reacttraining.com](https://reacttraining.com/react-router/)
+* __Dynamic Routing__ - [reacttraining.com/core/guides/philosophy/dynamic-routing](https://reacttraining.com/core/guides/philosophy/dynamic-routing)
 
 <br><br><br>

@@ -117,6 +117,10 @@ footer.nav-footer {
     padding-top: 0;
 }
 
+.mainContainer .wrapper a {
+    text-decoration: underline;
+}
+
     
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
