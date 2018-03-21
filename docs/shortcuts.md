@@ -15,3 +15,7 @@ The following commands are available in the Component-Tree:
 * Move to parent - moves the selected component to its parent's level in the tree.
 * Paste Inside ⌘V- pastes previously content as child of the selected component.
 * Select Parent Component - Displays a list of the selected component's parent and its grand parents.
+
+
+## GraphiQL
+* Shift + Space - List fields available in current schema

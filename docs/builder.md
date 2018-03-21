@@ -49,50 +49,47 @@ In the Style Editor you can:
 ## Component Settings
 
 
-The Component Settings deal with the configuration for the selected component. 
-
-How it works?
-You can find the Component Settings tab in the Builder's toolset, for setting attributes, events and custom properties.
+The Component Settings provides the configuration for the selected component. Configure the component available attributes and options, events, custom properties and Label.
 
 
-What does it do?
-In the Component Settings you can:
-* Set the component specific available attributes
-* Set events to the selected component
-* Add custom properties to the selected component.  
-State Settings
+For more information on __Component Settings__ please refer to the [__Components__](components.md) section.
 
-The State Settings tab is responsible for the configuration and updated information of the State of the selected component.    // Image Support //
-You can find the State Settings tab in the Builder's toolset when working with a Global State or Local StateComponent.
+### Access Component Settings panel
 
+* Inside the __Builder__ select a component from the __Component Tree__
+* Select the __Component Settings__ panel from the sidebar
+
+## State Settings
+The __State Settings__ panel is responsible for the configuration and updated information of __State__ in the selected component.
+
+
+For more information on __State Settings__ please refer to the [__State__](state.md) section.
+
+### Access State Settings panel
+* Inside the __Builder__ select a component from the __Component Tree__
+* Select the __State Settings__ panel from the sidebar
 
 
 ## Props Flow
+All you need to manipulate how __Props__ flow between components is shown and selected in the __Props Flow__ panel.
 
-The Props Flow the configuration and flow status of the selected component.  
+### Access Props Flow panel
+* Inside the __Builder__ select a component from the __Component Tree__
+* Select the __Props Flow__ panel from the sidebar
 
-
-How it works?
-You can find the Props Flow tab in the Builder's toolset. It will show you the selected component flow of its props.
-
-
-What does it do?
-In the Props Flow tab you can:
-
-
-Bind
+### Bind
 Bind the selected component props with objects or properties. It it will give you options given the props the component is receiving.
-
-
-Raw
+### Raw
 A raw option with the selected component updated props where you can check the raw output of your binded props.
-
-
-Flow
+### Flow
 If looking for how, where and where from your props are flowing, this is the option you are looking for.
+
+((needs more info and a walkthrough))
 
 
 ## Content-Area
+
+### Drag'n'Drop
 
 ### Canvas Tabs
 
