@@ -10,4 +10,4 @@ The Text component
 - __Tag__ - Specifies the text element tag
 
 ## References
- * [__Text__](https://developer.mozilla.org/en-US/docs/Web/API/Text) - MDN
+ * __Text__ - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/Text)

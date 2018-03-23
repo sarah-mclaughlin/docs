@@ -19,7 +19,7 @@ For default the last package version will be installed.
 
 ## References
 
-* [__npm__](https://www.npmjs.com)
-* [__package.json__](https://docs.npmjs.com/files/package.json)
+* __npm__ - [npmjs.com](https://www.npmjs.com)
+* __package.json__ -[docs.npmjs.com](https://docs.npmjs.com/files/package.json)
 
 <br><br><br>

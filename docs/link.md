@@ -27,4 +27,4 @@ The primary way to allow users to navigate around your application.
 - A string literal can be used as the `Link` option.
 
 ## References
- * [__Link__](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) - MDN
+ * __Link__ -[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) - MDN

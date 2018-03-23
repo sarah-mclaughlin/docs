@@ -70,5 +70,5 @@ And don't forget the most useful key shortcut __Shift__ + __Space__ which will l
 
 ## References
 
-* __GraphiQL Github__ - [github.com/graphql/graphiql](https://github.com/graphql/graphiql)
-* __GraphQL__ - [graphql.org/learn/](http://graphql.org/learn/)
+* __GraphiQL Github__ - [github.com](https://github.com/graphql/graphiql)
+* __GraphQL__ - [graphql.org/](http://graphql.org/learn/)

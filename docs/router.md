@@ -21,5 +21,5 @@ Router is a collection of navigational components. Predominantly composed of [__
 
 ## References
 
-* [__React Router__](https://reacttraining.com/react-router/)
+* __React Router__ - [reacttraining.com](https://reacttraining.com/react-router/)
 * [__Route__](route.md)

@@ -32,5 +32,5 @@ Sets the default path for that __Route__. When using params such as `/user/:user
 
 ## References
 
-* [__React Route__](https://reacttraining.com/react-router/web/api/Route)
-* [__path-to-regexp__](https://github.com/pillarjs/path-to-regexp)
+* __React Route__ -[reacttraining.com](https://reacttraining.com/react-router/web/api/Route)
+* __path-to-regexp__ -[github.com/pillarjs/path-to-regexp](https://github.com/pillarjs/path-to-regexp)

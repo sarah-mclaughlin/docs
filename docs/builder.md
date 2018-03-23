@@ -6,6 +6,17 @@ sidebar_label: Builder
 Our development toolbox, everything you will need is inside the builder.
 <br><br>
 ## Sidebar
+The most important part of navigation is the __Sidebar__ allowing control of what and where to display the toolset needed for your development.
+
+The options available in the Sidebar are the following:
+* [__Component-Tree__](#component-tree)
+* [__Class Editor__](#class-editor)
+* [__Style Editor__](#style-editor)
+* [__Component Settings__](#component-settings)
+* [__Props Flow__](#props-flow)
+* [__Timeline__](timeline.md)
+* [__Export Manager__](exporting.md#export-manager)
+* [__Profile__](dashboard.md#profile)
 
 ## Component-Tree
 
@@ -15,35 +26,15 @@ Using a hierarchical structure, the component-tree provides a visual overview of
 "The class global attribute is a space-separated list of the classes of the element. Classes allows CSS and Javascript to select and access specific elements" - MDN
 In the Shift's paradigm, classes work exactly on the same principle. It enables the re-use of code, being it CSS or JS.
 
-
-How it works?
-You can find the Class Editor as a tool from the Builder's toolset. It will show you the Classes information of the selected component.
-
-
-What does it do?
-In the Class Editor you can:
-* Find classes that are applied to a specific component
-* Browse throughout all the classes already available in your project
-* Create and Apply or just Create a class
-* Check to what components and styles a specific class is used on 
+More on [__Class Editor__](styles.md#class-editor)
 
 
 ## Style Editor
 
-The Style Editor is a set of tools that allows you to control and customize every aspect of styling. With the visual help of Canvas you can see in real-time all the styling being applied.  
+The Style Editor is a set of tools that allows you to control and customize every aspect of styling. With the visual help of Canvas you can see in real-time all the styling being applied.
 
 
-How it works?
-You can find the Style Editor as a tool from the Builder'stoolset. It will show you the selected style information.
-
-
-What does it do?
-In the Style Editor you can:
-* Edit a style CSS code without actually writting any CSS
-* Import raw CSS
-* Have a live preview of the result in the Canvas.
-* Choose from a set of already well-known and default css properties
-* Media Queries, Flex Box, Color palettes, effects, transitions and even much more. 
+More on [__Style Editor__](styles.md#style-editor)
 
 
 ## Component Settings
@@ -73,6 +64,8 @@ For more information on __State Settings__ please refer to the [__State__](state
 ## Props Flow
 All you need to manipulate how __Props__ flow between components is shown and selected in the __Props Flow__ panel.
 
+For more information on __Props Flow__ please refer to the [__Props__](props.md) section.
+
 ### Access Props Flow panel
 * Inside the __Builder__ select a component from the __Component Tree__
 * Select the __Props Flow__ panel from the sidebar
@@ -88,25 +81,23 @@ If looking for how, where and where from your props are flowing, this is the opt
 
 
 ## Content-Area
-
-### Drag'n'Drop
+With its own tab management system, __Shift__ lets the user manage and customize it's dev environment like any other IDE. With a key differenciation between two types of Tabs being them __Canvas__ and __Code__ tabs.
 
 ### Canvas Tabs
+All the changes from styling, interaction, data presentation, and others are shown here in real-time without the need to press a Save button.
+Not only it will give you a visual state of your app, it is also an easy way to structure, place and re-organize all your visual components by __dragging__ them into it. With labels, highlights, routing and ruler it will also help you to be more aware of the whole procedure. 
 
-*talk about how everything works in tabs and its management*
-
-The Canvas is where you see all the magic happen. All the changes from styling, interaction, data presentation, and many others in real-time.
-Not only it will give you a visual state of your app, it is also an easy way to structure, place and re-organize all your visual components by dragging them into it. With labels, highlights and ruler it will also help you to be more aware of the whole procedure. 
+For more information on [__Canvas__](canvas.md) please refer to its section.
 
 ### Code Tabs
+For coding and configuration purposes we have the __Code Tabs__ that enable you to edit any Action, Event, Stylesheet, Props and entire components with the same tools as an IDE.
 
+### Drag'n'Drop
+In the Content-Area one of the most useful tools is the drag'n'drop. It is possible for you to drag to structure, re-adjust everything from __windows__, __components__, __tabs__, __elements__, __code__ and others just by dragging them into place
 
 ## Real-time Collaboration
 
 One of the key features of Shift is the collaboration in real-time. Coding and Designing can be done at the same time, remotely and always keeping each operation's order.
-This will shortcut through web-app development limitations we know to be real in a every day's work, bringing different variables to take in consideration for a whole new environment where communication is key.   To help with collaboration awareness, the following built-in features are available:
-* Visual representation for multiple users
-    * Each collaborator has a marker
-    * Every operation done on Shift is tracked by user
-    * Highlights for each current user place in Shift
-* Chat feature
+This will shortcut through web-app development limitations we know to be real in a every day's work, bringing different variables to take in consideration for a whole new environment where communication is key. 
+
+For more information on [__Real-time Collaboration__](real-collab.md) please refer to its section.

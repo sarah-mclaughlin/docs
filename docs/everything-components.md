@@ -15,11 +15,16 @@ It's easier to organize, reuse and think in components using the Presentational 
 
 This concepts will make it easier to sepparate the layers of "layout" and "logic and data" in the way we use and develop components.
 
+>__Shift__ signals if you are dealing with a Presentationall or Container components by their ####(color?) in the Component-Tree
+
 ### Presentation Components
 
+Components that are stateless and therefore don't deal with state, focus on UI rather than behaviour.
+
 ### Container Components
+Treated as high-level components, deal with state management and have their own lifecycle methods either to control inputs or fetch data.
 
-
-## How to better use Root Components
-
-## How to better use Symbols
+## Root Components
+How Root Components work and what for
+## Symbols
+How Symbols work and what for

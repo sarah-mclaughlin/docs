@@ -2,9 +2,9 @@
   "docs": {
     "Walkthrough": ["index", "styling-a-component", "queries-as-components", "custom-component"],
     "Tutorials": ["message-board-tutorial"],
-    "Features": ["dashboard", "builder", "canvas","components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "files", "timeline", "importing", "exporting"],
+    "Features": ["dashboard", "builder", "canvas","components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "timeline", "importing", "exporting", "real-collab"],
     "Thinking in Shift": ["good-practices", "everything-components", "files-modules"],
     "Components": ["router", "route", "link", "text", "replicate-list", "html-elements"],
-    "References": ["shortcuts"]
+    "References": ["action-templates", "shortcuts"]
   }
 }

@@ -99,6 +99,6 @@ For more on __Link__ usage check the [__Link__](link.md) component page.
 * [__Route__](route.md)
 * [__Link__](link.md)
 * __React Router__ - [reacttraining.com](https://reacttraining.com/react-router/)
-* __Dynamic Routing__ - [reacttraining.com/core/guides/philosophy/dynamic-routing](https://reacttraining.com/core/guides/philosophy/dynamic-routing)
+* __Dynamic Routing__ - [reacttraining.com](https://reacttraining.com/core/guides/philosophy/dynamic-routing)
 
 <br><br><br>

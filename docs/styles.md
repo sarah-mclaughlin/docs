@@ -3,10 +3,14 @@ id: styles
 title: Styles
 sidebar_label: Styles
 ---
+`Styles sheets represent a major breakthrough for Web page designers, expanding their ability to improve the appearance of their pages.`<br> - W3.org
 
-A __Style__ contains style information for a document, or part of a document. By default, the style is expected to be written in [__CSS__](https://developer.mozilla.org/en-US/docs/Web/CSS).
+A __Style__ contains style information for a document, or part of a document. It enables you to convert text into images, control white spacing, tabling, colors, font size, alignment and many more.
 
-_"The __CSS__ (__Cascading Style Sheets__) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media."_
+By default, the style is expected to be written in [__CSS__](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+<br><br>
+_"The __CSS__ (__Cascading Style Sheets__) is a stylesheet language used to descrribe the presentation of a document written in HTML or XML (including XML dialects such as SVG or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media."_
 
 There are two ways to style an element:
 * Write CSS properties inline
@@ -14,16 +18,31 @@ There are two ways to style an element:
 
 __Shift__ also provides this two ways to style by either __writing CSS__ or __using a visual interface__ for selecting each CSS properties.
 
-## Managing Classes
-Classes are reusable styles that can be added to HTML elementsand they enable a single HTML element to have multiple different looks with CSS.
+## StyleSheets
+For better organisation the styles are organised in __StyleSheets__, normally separate files, for better reusing withing different pages. Not only that but on many use cases it is important to render a specific document in different ways (ex: different devices) and therefore have different styles organised in different ways.
 
-__Shift__ applies this concept to __components__ rendering too.
+__Shift__ has it's own way of handling this management.
 
-To easily manage and keep track of all the classes in your project, these are organised and applied with the UI __Shift's Class Editor__
-### Class Editor
-The Class Editor provides you a visual UI where you can create, delete and delete the classes in your project. These are sepparated in two categories, __Applied__ and __All__.
+With the help of a __Class Editor__ and __Style Editor__ it is possible to separate each component styling not only in classes for better reuse, but accessible in a way that makes the search for a specific Style much more easier. At each app development start everything is stored in a default __Stylesheet__ and can also be edited there. We made sure to connect all this tools so whenever you make a change in a place it will automatically be updated everywhere. If in need of separate files for style organising you can also create more __Stylesheets__ like in any web development environment. So you can see __StyleSheets__ like the librarys for style in your app, while with __Class Editor__ and __Style Editor__ is your library searcher and organiser.
 
-Not only you can manage your classes but you can also have information on where each class is used and apply __conditionals__.
+### Access StyleSheets
+* To access __StyleSheets__ open the __Code__ menu on the right sidebar
+* Select __StyleSheets__
+
+### Create new StyleSheet
+* Access __StyleSheets__
+* Click the __StyleSheets__ dropdown menu and select __Add StyleSheet__
+
+### Remove StyleSheet
+* Access __StyleSheets__
+* Right click on the to be removed __StyleSheet__
+* Select __Remove StyleSheet__
+
+## Class Editor - Managing Classes
+Classes are reusable styles that can be added to HTML elementsand they enable a single HTML element to have multiple different looks with CSS. __Shift__ applies this concept to __components__ rendering too.
+
+The __Class Editor__ provides you a visual UI where you can create, delete and delete the classes in your project sepparated in two categories, __Applied__ and __All__.
+Not only you can manage your classes but you can also have information on where each class is used and even apply __conditionals__.
 ### Access Class Editor
 * To access the __Class Editor__ open Shift's __Builder__ and select a component.
 * Open the __Class Editor__ tab in the __Sidebar__
@@ -48,19 +67,26 @@ In this category you have all the classes available to your project. You can sea
 * Type the name of the class you wish to find
 
 
-## Managing Styles
+## Style Editor - Managing Styles
 Styles are simply a group of CSS properties that are applied to dictate how an element is rendered. In this case how our components are rendered.
+
+
+To easily style your components, __Style Editor__ offers a visual UI with a toolset of __CSS__ properties enabling you to style with just a few clicks and without writing any code.
+From simple default __CSS__ properties to __Layout__, __Typography__, __Borders__ and __Effects__ to __CSS3__ __Shadows__, __Transforms__, __Flex__ __Box__ and __Media__ __Queries__.
+
 ### Access Style Editor
 * To access the __Style Editor__ open Shift's __Builder__ and select a component.
 * Open the __Style Editor__ tab in the __Sidebar__
-### Style Editor
-To easily style your components, __Style Editor__ offers a visual UI with a toolset of __CSS__ properties enabling you to style with just a few clicks.
-
-From simple default __CSS__ properties to __Layout__, __Typography__, __Borders__ and __Effects__ to __CSS3__ __Shadows__, __Transforms__, __Flex__ __Box__ and __Media__ __Queries__.
 ### All Styles
 In this category you have all the styles present in your project and you can search through them by typing a style name or create a new one by selecting the __Create style from search input__ option. It is possible also to edit a style by simply clicking it and also see its information and content preview.
 ### Applied Styles
 In this category you have all the styles that are applied to the selected component. You can edit a style by simply clicking it and also see its information and content preview.
+### Preview
+The changes in style will automatically be applied and thanks to the __live preview__ of __Shift__ you can see its changes directly on the __Canvas__.
+
+### Import
+It is also possible to import raw CSS in the __Style Editor__ by simply copying it to the __Raw CSS__ section at the bottom.
+
 
 
 ## Media Queries
@@ -99,10 +125,7 @@ The media Query will stay stored in the previously chosen __Class__ selector and
 * Edit or Delete the media query and click __Save Changes__ or __Delete Media Query__ when finished
 
 
-## Stylesheets
-
-
-
-
 ## References
-* __Media Queries__ - [developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+* __Media Queries__ - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+* __StyleSheets__ - [w3.org](https://www.w3.org/TR/html401/present/styles.html)
+<br><br><br>
