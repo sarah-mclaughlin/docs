@@ -6,7 +6,7 @@ sidebar_label: Builder
 Our development toolbox, everything you will need is inside the builder.
 <br><br>
 ## Sidebar
-The most important part of navigation is the __Sidebar__ allowing control of what and where to display the toolset needed for your development.
+The most important part of navigation is the __Sidebar__ allowing you control of what and where to display the toolset needed for your development.
 
 The options available in the Sidebar are the following:
 * [__Component-Tree__](#component-tree)
@@ -20,7 +20,9 @@ The options available in the Sidebar are the following:
 
 ## Component-Tree
 
-Using a hierarchical structure, the component-tree provides a visual overview of how components are linked. It's the easiest way to keep track of structure and to apply changes to each Shift Component.
+Using a hierarchical structure, the component-tree provides a visual overview of how components are linked. It's the easiest way to keep track of structure and to apply changes to each Shift Component. It also provides a easy-to-use creation tool to create new __Components__ of a list of __Shift Components__ and __HTML Elements__ for quicker development and drag'n'drop feature that allows you to re-structure and organise your app.
+
+More on [__Component-Tree__](component-tree.md)
 
 ## Class Editor
 "The class global attribute is a space-separated list of the classes of the element. Classes allows CSS and Javascript to select and access specific elements" - MDN

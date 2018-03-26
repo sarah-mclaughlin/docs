@@ -3,10 +3,10 @@ id: dashboard
 title: Dashboard
 sidebar_label: Dashboard
 ---
-To manage your profile, organization and projects
+The control panel for your Shift app development environment, here you can manage your profile, organization and projects.
 <br><br>
 ## Profile
-Your Profile
+In order to better identify your collaboration in a Project, a Profile is needed.
 <br><br>
 ### Access your Profile
 * At the top right select the dropdown of your profile (Your name)

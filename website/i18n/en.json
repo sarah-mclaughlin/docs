@@ -12,6 +12,8 @@
     "Builder": "Builder",
     "canvas": "Canvas",
     "Canvas": "Canvas",
+    "component-tree": "Component-Tree",
+    "Component-Tree": "Component-Tree",
     "components": "Components",
     "Components": "Components",
     "content": "Content",
