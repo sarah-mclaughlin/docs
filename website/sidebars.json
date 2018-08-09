@@ -1,6 +1,7 @@
 {
   "docs": {
     "Walkthrough": ["index", "styling-a-component", "queries-as-components", "custom-component"],
+      "Quick Start Guide": ["qs-01-welcome", "qs-02-intro-to-components", "qs-03-styling-components"],
     "Tutorials": ["message-board-tutorial"],
     "Features": ["dashboard", "builder", "canvas", "component-tree", "components", "styles", "state", "props", "actions-events", "routing", "graphql", "dependency-manager", "timeline", "importing", "exporting", "real-collab"],
     "Thinking in Shift": ["good-practices", "everything-components", "files-modules"],
