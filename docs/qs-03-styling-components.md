@@ -28,3 +28,10 @@ Styling the element is as simple as inputing values into respective fields. Note
   <summary>Fig 2</summary>
   <img style='padding: 20px' src="/docs/docs/assets/setting-block-styles.gif" />
 </details>
+
+Notice how, after styling the element, the applied styles section contains just those properties you have set.
+
+<details open>
+<summary>Fig 3</summary>
+<img style='padding: 20px' src="/docs/docs/assets/applied-styles.png" />
+</details>

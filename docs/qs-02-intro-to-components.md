@@ -10,7 +10,7 @@ Components are the building blocks that make up your webapp. Everything represen
 
 ## Adding a component
 
-Open the Components Drawer by clicking on the <img style="display: inline-block" src="/docs/docs/assets/add-component-btn.png" /> button along the toolbar. This will slide open the Components Drawer. 
+Open the Components Drawer by clicking on the <img style="display: inline-block; height: 1rem" src="/docs/docs/assets/add-component-btn.png" /> button along the toolbar. This will slide open the Components Drawer. 
 <details open>
   <summary>Fig 1</summary>
   <img style='padding: 20px' src="/docs/docs/assets/open-component-drawer.gif" />
