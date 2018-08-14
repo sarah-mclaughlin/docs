@@ -10,7 +10,8 @@
       "qs-01-welcome",
       "qs-02-intro-to-components",
       "qs-03-styling-components",
-      "qs-04-symbols"
+      "qs-04-symbols",
+      "qs-05-routes"
     ],
     "Tutorials": [
       "message-board-tutorial"
