@@ -39,4 +39,11 @@ In this way, like-components can be sensibly grouped.
 
 In a way it's like CSS classes, where `.btn`,`.btn .active`, and `.btn .disabled` might be used to modify a set of elements into fulfilling multiple purposes. The main benefits being the encapsulation of the styling to the component (this inadvertly gets rid of the 'naming' issues that CSS is known for) as well as the extended functionality that variants bring: events and props by variant. 
 
+## Conditionally Applying Variants
+As you've seen, variants can drastically alter the appearance of a component. Like classes, they can be combined and rearranged for even more flexbility and contol.
 
+However, its not uncommmon to need a component to change variants. For example, a submit button may be 'disabled' until a form is completed and then 'default' when ready. 
+
+It is for this reason that variants can be applied conditionally.
+
+On an instance of a Symbol go ahead and pick the Components editor. Click on the the expansion for the Variant you'd like. There you will find a series of Props you can directly bind to as well as an option to use a "module", a context-aware bit of code, to create the codition logic if something more complex is needed. 
