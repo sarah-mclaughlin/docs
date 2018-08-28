@@ -96,7 +96,7 @@ type Message @model {
 
 Grab the endpoint url so we can set it up in our App. 
 <br>
-Back to __Shift__ we go to the __Code__ tab and insert the url endpoint into the __GraphQL Settings__<br>(`Code->Settings->GraphQL`)
+Back to __Shift__ we go to the __Project Configuration__ tab and insert the url endpoint into the __GraphQL Settings__<br>(`Code->Settings->GraphQL`)
 
 Our connection is ready. Now we need two [__Queries__](queries.md) and one [__Mutation__](mutations.md):
 
