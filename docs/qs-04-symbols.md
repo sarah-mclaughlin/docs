@@ -46,4 +46,4 @@ However, its not uncommmon to need a component to change variants. For example, 
 
 It is for this reason that variants can be applied conditionally.
 
-On an instance of a Symbol go ahead and pick the Components editor. Click on the the expansion for the Variant you'd like. There you will find a series of Props you can directly bind to as well as an option to use a "module", a context-aware bit of code, to create the codition logic if something more complex is needed. 
+On an instance of a Symbol go ahead and pick the Components editor. Click on the the expansion for the Variant you'd like. There you will find a series of Props you can directly bind to as well as an option to use a "module", a context-aware bit of code, to create the condition logic if something more complex is needed. 
