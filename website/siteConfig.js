@@ -58,7 +58,8 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js', '../script/test.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/shift-studio/docs',
-  cname: 'docs.shift.studio'
+  cname: 'docs.shift.studio',
+  editUrl: 'https://github.com/shift-studio/docs/edit/master/docs/',
 };
 
 module.exports = siteConfig;
