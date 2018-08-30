@@ -10,11 +10,11 @@ So you've used and nested a couple of components. You've modified the content of
 
 ### Whats next?
 
-Shift is an incredibly powerful platform in that it not only lets you create your UI, but allows you to build an entire sophisticated design system. Lets go back to the components tree view by clicking on  <img style="display: inline-block; height: 2rem" src="/docs/docs/assets/components-tree-icon.png" /> . Then right-click on your Block component in the tree and select 'Create Component' and name it.
+Shift is an incredibly powerful platform in that it not only lets you create your UI, but allows you to build an entire sophisticated design system. Lets go back to the components tree view by clicking on  <img style="display: inline-block; height: 2rem" src="/docs/assets/components-tree-icon.png" /> . Then right-click on your Block component in the tree and select 'Create Component' and name it.
 
 <details open>
 <summary>Fig 3</summary>
-<img style='padding: 20px' src="/docs/docs/assets/create-symbol.gif" />
+<img style='padding: 20px' src="/docs/assets/create-symbol.gif" />
 </details>
 
 Notice, in the Symbols pane, we now have your newly created Symbol in addition to App. In the App canvas, the tree of components has been replaced with the symbol as well. Visually nothing has changed however.

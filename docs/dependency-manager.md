@@ -9,7 +9,7 @@ over package versions and an installation even easier and quicker.
 
 
 <br><br>
-![Dependency Manager](/docs/docs/assets/npm_dependency.png)
+![Dependency Manager](/docs/assets/npm_dependency.png)
 
 ## Add a dependency
 In the Depedency Manager you can search for a npm package from the __npm registry__ just by typing the package name. Then you set the package version you want in your project just like a [package.json](https://docs.npmjs.com/files/package.json) file used for __npm config__.

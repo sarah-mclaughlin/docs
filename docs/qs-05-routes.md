@@ -13,11 +13,11 @@ Continue where you left off or create a new project. With your component drawer 
 A couple of things will happen besides a Router appearing in the tree; your canvases will receive a pathbar and by default two Routes with links to one another will be added as default children of the Router.
 
 ## Router-View
-You'll also notice that next to the path bar is another new Button:  <img style="display: inline-block; height: 2rem" src="/docs/docs/assets/routing-view-btn.png" />. Go ahead and click this.
+You'll also notice that next to the path bar is another new Button:  <img style="display: inline-block; height: 2rem" src="/docs/assets/routing-view-btn.png" />. Go ahead and click this.
 
 <details open>
 <summary>Fig 1</summary>
-<img style='padding: 20px' src="/docs/docs/assets/routing-view.png" />
+<img style='padding: 20px' src="/docs/assets/routing-view.png" />
 </details>
 
 You'll see the routing overview of your entire app this way. Everytime you drop a router into your app, your routing tree will reflect all the branching and views you've created.
@@ -43,7 +43,7 @@ settings tab. Here, is where you can modify properties on the component. Watch w
 
 <details open>
 <summary>Fig 2</summary>
-<img style='padding: 20px' src="/docs/docs/assets/exact-prop.gif" />
+<img style='padding: 20px' src="/docs/assets/exact-prop.gif" />
 </details>
 
 Notice it shows Route2, set to "/route2" even when at "/". That's because with 'exact' deselected, "/route2" matches "/", not exactly, but progressivley, from left to right. Exact allows you to ONLY render an element when the path and the route are identical.

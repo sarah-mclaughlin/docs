@@ -15,7 +15,7 @@ With it's visual presentation you can:
 * Check what the operation will do on rollback
 * date and author of that operation.
 
-![Timeline](/docs/docs/assets/timeline.gif)
+![Timeline](/docs/assets/timeline.gif)
 
 ## Rollback
 
