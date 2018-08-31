@@ -41,25 +41,17 @@ In Dashboard you can simply create a new project by giving it a name.
 <br><br>
 ## Structure
 Let's start by structuring our App.
-First we will need to add the [__Router__](router.md) component to handle all the different paths. And for each path we will want a [__Route__](route.md) component. 
+First we will need to add the [__Router__](router.md) component to handle all the different paths. For default the component [__Router__](router.md) has two [__Route__](route.md) components as __defaultChildren__. > You can delete the default children and for each path add new __Route__ components.
 
-![Routing](/docs/assets/firsttutorial_routing1.gif)
+Now we configure each [__Route__](route.md) component. On the __component editor__ tab, under the Settings header we set the `Label`, `Path` and `Default path` settings for each [__Route__]: 
 
-For default the component [__Router__](router.md) has two [__Route__](route.md) components as __defaultChildren__.
-
-> You can delete the default children of each created component and add new __Route__ components, or configure them.
-
-Now we configure each [__Route__](route.md) component. On the __component settings__ tab we set the `Label`, `Path` and `Default path` settings for each of them:
-
-| Label       | Path                | Default Path     |
-|-------------|---------------------|------------------|
-| Home        | /                   |                  |
-| Message     | /message/:messageid | /message/default |
-| PostMessage | /newMessage         |                  |
+| Label       | Path                | Default Path     | Exact Path    |
+|-------------|---------------------|------------------|---------------|
+| Home        | /                   |                  | tick          |
+| Message     | /message/:messageid | /message/default |               |
+| PostMessage | /newMessage         |                  |               |
 
 > We will be using the messageid as a parameter to fetch and show each individual message.
-
-![Routing](/docs/assets/firsttutorial_routing2.gif)
 
 Starting with the __Home Route__ we will add a [__Query__](query.md) component to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
 <br><br>
@@ -71,7 +63,7 @@ For the __Message Route__ we will want also a [__Query__](query.md) component to
 
 ![Message](/docs/assets/firsttutorial_message.png)
 
-At last the __PostMessage Route__ as our form to submit new Messages, will have a [__State__](state.md) component with a child [__Form__](form.md) and 
+At last the __PostMessage Route__ as our form to submit new Messages, will have a [__LocalState__](state.md) component with a child [__Form__](form.md) and 
 this will have the following components for input:
 
 ![PostMessage](/docs/assets/firsttutorial_postmessage.png)
@@ -81,9 +73,9 @@ So to wrap our structure, this is all we will need.
 ## Data
 Someone at the back-end will have to take care of the DB. Well, we can be that someone.
 
-For this tutorial we will use the __GraphCool__ interface: [__Graph.cool__](https://www.graph.cool)
+For this tutorial we will use the __GraphCool__ interface.  Go to [__Graph.cool__](https://www.graph.cool) and create an account.  Login to your account, create a new project called 'Messages' and go to the Graphcool console. It should look like this (insert image).
 
-Open Graphcool console and set up a new project with the following `Type`:
+Ignoring the file and user `Types`, add a new type 'Message'. You will notice that Graphcool automatically gives 'Message' an unique id field. Add the fields: date, description and title.  Your type should look like this:
 
 ```
 type Message @model {
@@ -94,17 +86,20 @@ type Message @model {
 }
 ```
 
-Grab the endpoint url so we can set it up in our App. 
+Now we need to connect this to your app in Shift.  To do this, copy the simple API endpoint url under endpoints in Graphcool and paste this into the __GraphQL Settings__ under the __Project Configuration__ tab in __Shift__. Remember to save. 
 <br>
-Back to __Shift__ we go to the __Project Configuration__ tab and insert the url endpoint into the __GraphQL Settings__<br>(`Code->Settings->GraphQL`)
 
-Our connection is ready. Now we need two [__Queries__](queries.md) and one [__Mutation__](mutations.md):
+Our connection is ready. Now we need two [__Queries__](queries.md) and one [__Mutation__](mutations.md).
 
 - query __allMessages__ - all the messages to be shown in the Messages feed.
 - query __message__ - the individual message fetched using it's `id`.
 - mutation __postMessage__ - post messages.
 
->In __Code Mode__ you can not only add this queries and mutation but also use the [__GraphiQL__](https://github.com/graphql/graphiql) interface to do it. All this inside __Shift__.
+>In __Code__ you can not only add this queries and mutation but also use the [__GraphiQL__](https://github.com/graphql/graphiql) interface to do it. All this inside __Shift__.
+
+Under the __Code__ tab, right click on files and add three separate graphql query files. Your file structure should look like: (insert image here).  Press enter to save the file and remember to use the .gql extension on each file.
+
+Insert the below queries and mutation into their respective files.
 
 ```
 query allMessages {
@@ -145,17 +140,17 @@ mutation addMessage (
   }
 ```
 
-> Each __Query__ and __Mutation__ needs to be added separately 
+> Each __Query__ and __Mutation__ needs to be added separately.
+
+You can check that these are all working correctly using the GraphiQL platform. For the message query and addMessage mutation you will need to provide the query variables.    
 
 Another step complete, it's time to create data.
 <br><br>
 ## Content
 
-Our app runs on data, receives and submits __Messages__, so let's link it all together. <br>
-In Shift's GraphQL interface we are going to "manually" submit messages so we can link data to it's desired place.
-<br> (`Code->Settings->GraphQL`) 
+Our app runs on data, receives and submits __Messages__, so let's link it all together. <br> 
 
-In our previously created `addMessage` mutation we will insert messages. At the bottom in `Query Variables` in a json format
+In the GraphiQL interface we can "manually" submit messages to the database. To do this opening the previously created `addMessage` mutation from the AddMessage.gql file. At the bottom in `Query Variables` in a json format
 we add:
 
 ```
@@ -167,48 +162,60 @@ we add:
 ```
 > In a first instance we insert the date for the messages submitted manually, but later on this will be done automatically by our app.
 
-From just hitting the play button at the top of the GraphiQL interface we can see that our Mutation query went through and have the
-returning information aswell as the id generated for our message.
+From just hitting the play button at the top of the GraphiQL interface we can see that our Mutation query went through and we have the returning information as well as the id generated for our message.
 
 Now we have messages in our DB, it's time to see it.
 
 ### Home
 
-Back in __Designer Mode__, we go to the Route we created as __Home__ and select the previously created __Query__ component. On the
-configuration of the __Query__ we set the `Query` option to __allMessages__ (our `Query` defined in Code Mode).
+Go to the Route we created as __Home__ and select the previously created __Query__ component. On the __Query__ settings we set the `Query` option to __allMessages__ (our `Query` defined in Code).
 
-In __ReplicateList's__ child, set the Configuration option `Item Name` to __message__, this will define how we reference each data item.
-Set `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then in __Props Flow__ tab select the __allMessages__ query and `Add new link` with `Data` type, this will bind allMessages received to this __ReplicateList__.
+In the settings for the __ReplicateList__ component (under the __allMessages__ query), set the `Item Name` to __message__ and `Each Item Key` to __message.id__ so it uses the message id as key for each data item. Then set the `Data` by clicking on `Data` --> `Bind values` --> `Value` --> click on the drop down menu and scroll down to __allMessages__. When you select __allMessages__ you should see some text appear on your page.
 
-Now to set each message title and date to each righteous place we select the __Text__ child of __ReplicateList__ and in the PropsFlow tab we
-bind it to `__message__ -> __title__` and select the `Link` type to Content. Do the same for the __Date__ child but don't forget to set the `Link` type to __Date__.
+(Insert image 14 here)
 
-Till this step, every change you've done to your app had the proper visual update in __Canvas__, it's a good practice to take advantage of this Shift's feature to debug everything that's happening in real-time.
+You will also see that these messages have been added as props by going to the __Props and Binding__ tab. Remember that these are the props passing to the __ReplicateList__ component and therefore these will only show if you view __Props and Binding__ with that component selected. 
+
+(Insert image 15 here)
+
+Now to set the title and date for each message we select the __Text__ child of __ReplicateList__, go to the component settings then set the `Content` by clicking on `Content` --> `Bind values` --> `Value` --> click on the drop down menu and scroll down to __message__. Open __message__ and select __title__. When you select __title__ each message title should now appear on your page.
+
+(Insert image 16 here)
+
+Go ahead and do the same for the __Date__ child of __ReplicateList__ except, instead of `Content` in the settings, select `Date` and set the `Value` to  __message__, __date__.
+
+(Insert image 17 here)
 
 In our plan there was a link that would take us to each individual message, and since we forgot to add it on purpose, let's see how to quickly shortcut and deal with it in Shift.
 
-We add a __Link__ component as child of the __ReplicateList__ and then we drag the __Text__ component (which is our message title) into the  it. In __Link__ Configuration set the `Link` option to __/message/${props.message.id}__. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __Query__ and fed from the __ReplicateList__.
+Add a __Link__ component as a child of __ReplicateList__ and then drag the __Text__ component (which is our message title) into  it. You will need to delete the text component that apears by default when you add a __Link__ component.
+
+(Insert image 18 here)
+
+In the __Link__ configuration settings we set the link path by clicking `Link` --> `Bind values` --> `Expression` and inserting the string `/message/${this.props.item.id}`. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __Query__ and fed from the __ReplicateList__.
+
+(Insert image 19 here)
 
 >As you have noticed the Component-Tree works with Components and Html elements respecting the order of the well known DOM Tree. That's why the __Link__ is added as a parent of __Text__ and not the other way around.
 
 
 ### Message
 
-Since we are routing every message by its `id` as a parameter defined in this __Message__ route (`/message/:messageid`), set a messageid default path in configuration. With the default message set it's now easier to connect all the data to each field.
+We are routing every message by its `id` as a parameter defined in this __Message__ Route (`/message/:messageid`). Now we need to tell our __Message__ Route __Query__ to deal with it.
 
-We need to tell our __Query__ to deal with it.
-
-In __Query__ configuration set the `Query` option as __message__ and the `Arguments` as:
+In the __Query__ configuration settings set the `Query` option as __message__ and for the `Arguments` create a module, open in a new tab and set the 'return' to:
 
 ```
 {
-    id: props.flowProps.route.params.messageid
+    id: this.props.route.params.messageid
 }
 ```
 
 "__Query__ deal with it !" we said.
 
-Then just select each field for __title__, __description__ and __date__ and bind them in __Props Flow__ tab like we did before.
+Then simply bind the 'Content' and 'Date' in the settings for __title__, __description__ and __date__ like we did before. For a reminder go to each component's settings and set the `Content` or `Date` by clicking `Bind values` --> `Value` --> and scrolling the drop down menu until you find the field you would like to bind.
+
+(Insert image 20 here)
 
 >__Tip:__ go to the __Home__ Route and start the preview, see how each link takes you to each individual message path and presentation.
 
@@ -216,85 +223,113 @@ We are done here. How quick was it?
 
 ### PostMessage
 
-For the __PostMessage__ Route we will need to configure the __Local State__ component, and __Actions__ for it.
+For the __PostMessage__ Route we will need to configure the __Local State__ component, and the __Actions__ for it.
 
-In our __Local State__ component in __State Settings__ tab we set the default state:
+In our __Local State__ component settings we set the `Default State` by creating a module, opening in a new tab and setting the return to:
 
 ```
 {
   title: "",
-  description: ""
+  description: "" 
 }
 ```
+Remember to save your changes to this file (ctrl s)
 
-And add two new __Actions__:
+(Insert image 21 here)
 
+To add __Actions__ to your __Local State__ simply click 'Add action' under the Actions in __Local State__ settings. This will prompt you for the 'New action name'. Add the following Action for every change in the target values.
 
-Name: changeField
+New action name: changeField
 Template: Synchronous state change
-```
-export default ({ state, event }) => {
-  event.preventDefault();
 
-  return Object.assign({}, state, {
-    [event.target.name]:event.target.value,
-  });
+Remember to 'enter' to save your changes.
+
+(Insert image 22 here)
+
+Click on the action to open it in a new tab.  Insert the following code and save.
+
+```
+export default function (event) {
+  this.setLocalState(Object.assign({}, this.localState, {
+    [event.target.name]: event.target.value
+  }));
 }
 ```
 
-> Action for every change in the target values.
+Add this Action for submitting the data gathered from the __Form__. setting the state back to it's default and send the user to the newly created message. The __date__ property is added to the variables fetched from the inputs.
 
 Name: onSubmit
 Type: Do Mutation
+
 ```
-export default ({ state, event, eventComponentProps, history }) => {
-  event.preventDefault();
+import MUTATION from 'shift-files/addMessage.gql';
+import { mutate } from 'shift-apollo-client';
 
-  return async ({ getState, setState, mutate, getMutation }) => {
-    setState(Object.assign({}, getState(), {
-      loading: true,
-    }));
-
-    try {
-      // set the date for the submitted message
-      const addDateVariable = Object.assign({}, getState(), {
-        date: new Date().toISOString(),
-      });
-
-      const response = await mutate({
-        mutation: getMutation('addMessage'),
-        variables: addDateVariable
-      });
-
-      setState(Object.assign({}, getState(), {
-        title: "",
-        description: "",
-        error: null,
-        loading: false,
+export default async function () {
+    this.setLocalState(Object.assign({}, this.localState, {
+        loading: true,
       }));
 
-      // change path to the newly created message
+      try {
+         // set the date for the submitted message
+        const addDateVariable = Object.assign({}, getLocalState(), {
+          date: new Date().toISOString(),
+        });
+
+        const response = await mutate({
+          mutation: MUTATION,
+          variables: addDateVariable,
+        });
+
+        this.setLocalState(Object.assign({}, this.localState, {
+          title: "",
+          description: "",
+          error: null,
+          loading: false,
+        }));
+
+        // change path to the newly created message
       history.push(`/message/${response.data.createMessage.id}`);
-    } catch (e) {
-      setState(Object.assign({}, getState(), {
-        error: e,
-        loading: false,
-      }));
-    }
-  };
-}
+
+      } catch (e) {
+        this.setLocalState(Object.assign({}, this.localState, {
+          error: e,
+          loading: false,
+        }));
+      }
+};
 
 ```
 
-> Action for submitting the data gathered from the __Form__, setting the state back to it's default and send the user to the newly created
-message. The __date__ property is added to the variables fetched from the inputs.
+This action will also set the state back to it's default and send the user to the newly created message. The __date__ property is added to the variables fetched from the inputs.
 
-Now in the __Form__ component's configuration we add the event __onSubmit__ with the __onSubmit__ action created.
+Now we need to link up the __Form__ child components with the above actions.  To do this we go to each __InputText__ configuration `Events` and add an 'onChange' event.  Insert the following code into the `Event Handler` which will open into a new tab.
 
-For the __title__ and __description__ inputs we go to each configuration and set the `Name` option as `title` and `description` respectively
-and add the Event __onChange__ to the __changeField__ Action. For each of them in the PropsFlow tab add a Link for each property with the type __Value__.
+```
+export default function eventHandler(event) {
+  event.preventDefault();
+  //-- Event Handler
+  this.props.changeField(event);
+}
+```
+(Insert image 23 here)
 
-For the button input we set the `Value` and `Type` as __Submit__.
+Now do the same to the __InputButton__ by going to `Events`, adding an 'onClick' event and inserting the following code into the `Event Handler` which will open into a new tab.
+
+```
+export default function eventHandler(event) {
+  event.preventDefault();
+  //-- Event Handler
+  this.props.onSubmit(event);
+}
+```
+For the final step, we need to bind the __title__ and __description__ input fields. To do this we go to the configuration settings for each __InputText__ field and set the `Name` and `Value` options as `title` and `description` respectively.
+
+(Insert image 24 here)
+
+// Discuss with Julian the differences between Button and InputButton and what is wrong with the onSubmit function.
+
+For the button input we also need to set the `Value` and `Type` as __Submit__.
 
 
 __It still doesn't look pretty, but it works! Congratulations!__
