@@ -337,7 +337,7 @@ export default function eventHandler(event) {
   this.props.onSubmit(event);
 }
 ```
-Alternatively, fgor the button input we can simply set the `Value` and `Type` as __Submit__. // Ask Julian if this is correct.
+Alternatively, for the button input we can simply set the `Value` and `Type` as __Submit__. // Ask Julian if this is correct.
 
 For the final step, we need to bind the __title__ and __description__ input fields. To do this we go to the configuration settings for each __InputText__ field and set the `Name` and `Value` options as `title` and `description` respectively.
 
