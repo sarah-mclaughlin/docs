@@ -242,7 +242,7 @@ To add __Actions__ to your __Local State__ simply click 'Add action' under the A
 New action name: changeField
 Template: Synchronous state change
 
-Remember to 'enter' to save your changes.
+Remember to hit 'enter' to save your changes.
 
 (Insert image 22 here)
 
@@ -256,7 +256,7 @@ export default function (event) {
 }
 ```
 
-Add this Action for submitting the data gathered from the __Form__. setting the state back to it's default and send the user to the newly created message. The __date__ property is added to the variables fetched from the inputs.
+Add this Action for submitting the data gathered from the __Form__, setting the state back to it's default and sending the user to the newly created message. You will see that the __date__ property is added to the variables fetched from the inputs.
 
 Name: onSubmit
 Type: Do Mutation
@@ -264,44 +264,58 @@ Type: Do Mutation
 ```
 import MUTATION from 'shift-files/addMessage.gql';
 import { mutate } from 'shift-apollo-client';
+import shiftHistory from 'shift-history';
+import query from 'shift-files/allMessages.gql';
 
 export default async function () {
-    this.setLocalState(Object.assign({}, this.localState, {
-        loading: true,
-      }));
+  this.setLocalState(Object.assign({}, this.localState, {
+    loading: true,
+  }));
+  
+  try {
 
-      try {
-         // set the date for the submitted message
-        const addDateVariable = Object.assign({}, getLocalState(), {
-          date: new Date().toISOString(),
-        });
+    this.localState.date = new Date().toISOString()
+    
+    const response = await mutate({
+      mutation: MUTATION,
+      variables: this.localState,
+      // update list of messages on home page
+      update: function (store, { data: { createMessage } }) {
+        
+        try {
+          
+          const data = store.readQuery({ query });
+          data.allMessages.push(createMessage);
+          store.writeQuery({ query, data })
 
-        const response = await mutate({
-          mutation: MUTATION,
-          variables: addDateVariable,
-        });
-
-        this.setLocalState(Object.assign({}, this.localState, {
-          title: "",
-          description: "",
-          error: null,
-          loading: false,
-        }));
-
-        // change path to the newly created message
-      history.push(`/message/${response.data.createMessage.id}`);
-
-      } catch (e) {
-        this.setLocalState(Object.assign({}, this.localState, {
-          error: e,
-          loading: false,
-        }));
+        } catch (e) {
+          this.setLocalState(Object.assign({}, this.localState, {
+            error: e,
+            loading: false,
+          }));
+        }
       }
+    });
+
+    this.setLocalState(Object.assign({}, this.localState, {
+      title: "",
+      description: "",
+      error: null,
+      loading: false,
+    }));
+
+    // change path to the newly created message
+    shiftHistory.push(`/message/${response.data.createMessage.id}`)
+
+  } catch (e) {
+    this.setLocalState(Object.assign({}, this.localState, {
+      error: e,
+      loading: false,
+    }));
+  }
 };
 
 ```
-
-This action will also set the state back to it's default and send the user to the newly created message. The __date__ property is added to the variables fetched from the inputs.
 
 Now we need to link up the __Form__ child components with the above actions.  To do this we go to each __InputText__ configuration `Events` and add an 'onChange' event.  Insert the following code into the `Event Handler` which will open into a new tab.
 
@@ -314,7 +328,7 @@ export default function eventHandler(event) {
 ```
 (Insert image 23 here)
 
-Now do the same to the __InputButton__ by going to `Events`, adding an 'onClick' event and inserting the following code into the `Event Handler` which will open into a new tab.
+Now do the same to the __InputButton__ by going to `Events`, adding an 'onClick' event and inserting the following code into the `Event Handler` which will open into a new tab.  
 
 ```
 export default function eventHandler(event) {
@@ -323,14 +337,11 @@ export default function eventHandler(event) {
   this.props.onSubmit(event);
 }
 ```
+For the button input we also need to set the `Value` and `Type` as __Submit__. // Ask Julian if this is actually necessary
+
 For the final step, we need to bind the __title__ and __description__ input fields. To do this we go to the configuration settings for each __InputText__ field and set the `Name` and `Value` options as `title` and `description` respectively.
 
 (Insert image 24 here)
-
-// Discuss with Julian the differences between Button and InputButton and what is wrong with the onSubmit function.
-
-For the button input we also need to set the `Value` and `Type` as __Submit__.
-
 
 __It still doesn't look pretty, but it works! Congratulations!__
 <br><br>
