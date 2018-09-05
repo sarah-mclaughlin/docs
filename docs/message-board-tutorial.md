@@ -57,7 +57,7 @@ Now we configure each [__Route__](route.md) component. On the __component editor
 
 ![Home](/docs/assets/tutorial_image2.png)
 
-Starting with the __Home Route__ we will add a [__Query__](query.md) component to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicatelist.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
+Starting with the __Home Route__ we will add a [__Query__](query.md) component to get the data from our Graphql DB endpoint. Then to it we add a [__ReplicateList__](replicate-list.md) which will ease our job by replicating, with the help of it's parent, each instance of data (__Message__) received. 
 <br><br>
 For each __Message__ we will want to show its __Title__ (which will be a link to the individual message) and __Date__, so we add the following components:
 
@@ -180,7 +180,7 @@ Go to the Route we created as __Home__ and select the previously created __Query
 
 ![Home](/docs/assets/tutorial_image12.png).
 
-In the settings for the __ReplicateList__(replicatelist.md) component (under the __allMessages__ query), set the `Item Name` to __message__ and `Each Item Key` to __message.id__ so it uses the message id as key for each data item. 
+In the settings for the __ReplicateList__(replicate-list.md) component (under the __allMessages__ query), set the `Item Name` to __message__ and `Each Item Key` to __message.id__ so it uses the message id as key for each data item. 
 
 ![Home](/docs/assets/tutorial_image13.png).
 
@@ -188,25 +188,25 @@ Then set the `Data` by clicking on `Data` --> `Bind values` --> `Value` --> clic
 
 ![Home](/docs/assets/tutorial_image14.png).
 
-You will also see that these messages have been added as props by going to the __Props and Binding__ tab. Remember that these are the props passing to the __ReplicateList__(replicatelist.md) component and therefore these will only show if you view __Props and Binding__ with that component selected. 
+You will also see that these messages have been added as props by going to the __Props and Binding__ tab. Remember that these are the props passing to the __ReplicateList__(replicate-list.md) component and therefore these will only show if you view __Props and Binding__ with that component selected. 
 
 ![Home](/docs/assets/tutorial_image15.png).
 
-Now to set the title and date for each message we select the __Text__(text.md) child of __ReplicateList__(replicatelist.md), go to the component settings then set the `Content` by clicking on `Content` --> `Bind values` --> `Value` --> click on the drop down menu and scroll down to __message__. Open __message__ and select __title__. When you select __title__ each message title should now appear on your page.
+Now to set the title and date for each message we select the __Text__(text.md) child of __ReplicateList__(replicate-list.md), go to the component settings then set the `Content` by clicking on `Content` --> `Bind values` --> `Value` --> click on the drop down menu and scroll down to __message__. Open __message__ and select __title__. When you select __title__ each message title should now appear on your page.
 
 ![Home](/docs/assets/tutorial_image16.png).
 
-Go ahead and do the same for the __Date__(date.md) child of __ReplicateList__(replicatelist.md) except, instead of `Content` in the settings, select `Date` and bind the `Value` to  __message__, __date__.
+Go ahead and do the same for the __Date__(date.md) child of __ReplicateList__(replicate-list.md) except, instead of `Content` in the settings, select `Date` and bind the `Value` to  __message__, __date__.
 
 ![Home](/docs/assets/tutorial_image17.png).
 
 In our plan there was a link that would take us to each individual message, and since we forgot to add it on purpose, let's see how to quickly shortcut and deal with it in Shift.
 
-Add a __Link__(link.md) component as a child of __ReplicateList__(replicatelist.md) and then drag the __Text__(text.md) component (which is our message title) into  it. You will need to delete the text component that apears by default when you add a __Link__(link.md) component.
+Add a __Link__(link.md) component as a child of __ReplicateList__(replicate-list.md) and then drag the __Text__(text.md) component (which is our message title) into  it. You will need to delete the text component that apears by default when you add a __Link__(link.md) component.
 
 ![Home](/docs/assets/tutorial_image18.png).
 
-In the __Link__(link.md) configuration settings we set the link path by clicking `Link` --> `Bind values` --> `Expression` and inserting the string `/message/${this.props.item.id}`. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __Query__(queries.md) and fed from the __ReplicateList__(replicatelist.md).
+In the __Link__(link.md) configuration settings we set the link path by clicking `Link` --> `Bind values` --> `Expression` and inserting the string `/message/${this.props.item.id}`. This will set the link path to our __Message__ Route with the message `id` from the __message__ previously received from the __Query__(queries.md) and fed from the __ReplicateList__(replicate-list.md).
 
 ![Home](/docs/assets/tutorial_image19.png).
 
@@ -272,7 +272,7 @@ export default function (event) {
 }
 ```
 
-The next Action allows us to submit the data gathered from the __Form__(form.md), set the state back to it's default and send the user to the newly created message. You will see that the __date__ property is added to the variables fetched from the inputs.
+The next Action allows us to submit the data gathered from the __Form__, set the state back to it's default and send the user to the newly created message. You will see that the __date__ property is added to the variables fetched from the inputs.
 
 Name: onSubmit
 Type: Do Mutation
@@ -334,7 +334,7 @@ export default async function () {
 ```
 For information on the above code visit the [__Apollo React docs__](https://s3.amazonaws.com/apollo-docs-1.x/index.html). We note that these are not the latest version of the Apollo React docs and are working to update this.
 
-Now we need to link up the __Form__(form.md) child components with the above actions.  To do this we go to each __InputText__(inputtext.md) configuration `Events` and add an 'onChange' event.  Insert the following code into the `Event Handler` which will open into a new tab.
+Now we need to link up the __Form__ child components with the above actions.  To do this we go to each __InputText__ configuration `Events` and add an 'onChange' event.  Insert the following code into the `Event Handler` which will open into a new tab.
 
 ```
 export default function eventHandler(event) {
@@ -345,7 +345,7 @@ export default function eventHandler(event) {
 ```
 ![Home](/docs/assets/tutorial_image23.png).
 
-Now do the same to the __InputButton__(inputbutton.md) by going to `Events`, adding an 'onClick' event and inserting the following code into the `Event Handler` which will open into a new tab.  
+Now do the same to the __InputButton__ by going to `Events`, adding an 'onClick' event and inserting the following code into the `Event Handler` which will open into a new tab.  
 
 ```
 export default function eventHandler(event) {
@@ -355,9 +355,9 @@ export default function eventHandler(event) {
 }
 
 ```
-Alternatively, instead of adding the above `Event` to __InputButton__(inputbutton.md), you can add it as an 'onSubmit' `Event` in the __Form__(form.md) configuration. Either way will work.
+Alternatively, instead of adding the above `Event` to __InputButton__, you can add it as an 'onSubmit' `Event` in the __Form__ configuration. Either way will work.
 
-For the final step, we need to bind the __title__ and __description__ input fields. To do this we go to the configuration settings for each __InputText__(inputtext.md) field and set the `Name` and `Value` options as `title` and `description` respectively.
+For the final step, we need to bind the __title__ and __description__ input fields. To do this we go to the configuration settings for each __InputText__ field and set the `Name` and `Value` options as `title` and `description` respectively.
 
 ![Home](/docs/assets/tutorial_image24.png).
 
