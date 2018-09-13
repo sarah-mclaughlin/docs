@@ -58,7 +58,7 @@ __Explore the Documentation Explorer:__
 
 ### Utilities
 GraphiQL also provides the following useful debugging features:
-* __Debugging as-you-type__ - highlighting errors and providing inteligent type for auto-completion and hints
+* __Debugging as-you-type__ - highlighting errors and providing intelligent type for auto-completion and hints
 * __Json Viewer__ - a read-only, copy support, code folding with automatic identation viewer for response display
 * __Variables pane__ - Stores your current variable use under the selected query
 
