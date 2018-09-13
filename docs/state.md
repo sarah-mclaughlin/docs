@@ -11,7 +11,7 @@ __What happens when a component receives data from other components than the par
 
 __What if the user changes and/or inputs data directly to the component?__
 
-To answer this needs we have __State__.
+To answer this, we have __State__.
 
 So state is used so that a component can keep track of information in between its renders. When you apply changes to __State__ it updates and re-renders the component. 
 
