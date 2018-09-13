@@ -5,7 +5,7 @@ sidebar_label: State
 ---
 `State is best described as how a component's data looks at a given point in time`
 
-As a concept from __React__ that is part of __Shift__, State is used so that a component can keep track of information within the its own environment or the app environment.
+As a concept from __React__ that is part of __Shift__, State is used so that a component can keep track of information within its own environment or the wider app environment.
 
 __What happens when a component receives data from other components than the parent?__
 
